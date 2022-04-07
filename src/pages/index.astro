@@ -1,7 +1,20 @@
 ---
 import Page from '../layouts/page.astro'
+
+type ResourceInfo = {
+	title: string,
+}
+
+const resources = await Astro.glob<ResourceInfo>('./resources/*.md')
+
+console.log(resources[0].frontmatter)
 ---
 
 <Page title="Resources">
-	<p>Hello</p>
+	<h1>Resources</h1>
+	<ul>
+		{resources.map(resource => (
+			<li><a href={resource.url}>{resource.frontmatter.title}</a></li>
+		))}
+	</ul>
 </Page>

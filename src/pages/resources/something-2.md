@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/resource.astro
-title: Something
+title: Something 2
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet venenatis urna cursus eget. Felis imperdiet proin fermentum leo vel orci. Cras fermentum odio eu feugiat pretium nibh.
 
