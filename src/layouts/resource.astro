@@ -6,5 +6,11 @@ const { content } = Astro.props
 
 <Page title={content.title}>
     <h1>{content.title}</h1>
+    <dl>
+        <dt>Author</dt>
+        <dd>{content.author}</dd>
+        <dt>Resource</dt>
+        <dd><a href={content.resource}>{content.title}</a></dd>
+    </dl>
     <slot></slot>
 </Page>
