@@ -6,8 +6,6 @@ type ResourceInfo = {
 }
 
 const resources = await Astro.glob<ResourceInfo>('./resources/*.md')
-
-console.log(resources[0].frontmatter)
 ---
 
 <Page title="Resources">

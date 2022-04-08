@@ -1,5 +1,25 @@
 :root {
     --font-reg: 'Source Sans Pro', sans-serif;
+    --font-sz-base: clamp(1rem, 2.667vw, 1.25rem); /* 2.667 = 100 / 37.5 */
+    --font-sz-venus: 0.875em;
+    --font-sz-earth: 1em;
+    --font-sz-neptune: 1.125em;
+    --font-sz-uranus: 1.25em;
+    --font-sz-saturn: 1.5em;
+    --font-sz-jupiter: 2em;
+
+    --sp-st-h: 0.0625em;
+    --sp-st-be: 0.25em;
+    --sp-st-o: 0.5em;
+    --sp-st-s: 1em;
+    --sp-st-ge: 2em;
+
+    --c-bg: hsl(240, 0%, 94%);
+    --c-bg-text: hsl(0, 0%, 5%);
+    --c-primary: hsl(210, 68%, 43%);
+    --c-primary-dark: hsl(212, 68%, 38%);
+    --c-secondary: hsl(262, 38%, 52%);
+    --c-secondary-dark: hsl(262, 38%, 47%);
 }
 
 *, *::before, *::after {
@@ -9,4 +29,72 @@
 
 body {
     font-family: var(--font-reg);
+    font-size: var(--font-sz-base);
+    min-height: 100vh;
+    background-color: var(--c-bg);
+    color: var(--c-bg-text);
+    padding: 0;
+}
+
+a {
+    color: var(--c-primary);
+}
+
+a:hover {
+    color: var(--c-primary-dark);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--c-secondary);
+}
+
+a:visited:hover {
+    color: var(--c-secondary-dark);
+}
+
+.container {
+    max-width: 75rem;
+    margin: auto;
+    padding: var(--sp-st-o);
+}
+
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: var(--sp-st-be);
+    padding-top: var(--sp-st-o);
+}
+
+article h1 {
+    font-size: var(--font-sz-jupiter);
+    padding-top: 0;
+}
+article h2 { font-size: var(--font-sz-saturn); }
+article h3 { font-size: var(--font-sz-uranus); }
+article h4 { font-size: var(--font-sz-earth); }
+article h5 { font-size: var(--font-sz-venus); }
+article h6 {
+    font-size: var(--font-sz-venus);
+    font-style: italic;
+}
+
+article p {
+    line-height: 1.5;
+    margin-bottom: var(--sp-st-s);
+}
+
+article ul,
+article ol {
+    padding-left: clamp(var(--sp-st-s), 2.667vw, var(--sp-st-ge));
+}
+
+article li {
+    line-height: 1.5;
+    margin-bottom: var(--sp-st-o);
 }
