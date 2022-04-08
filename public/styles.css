@@ -4,6 +4,7 @@
     --font-reg: 'Source Sans Pro', sans-serif;
     --font-code: 'Source Code Pro', monospace;
     --font-sz-base: clamp(1rem, 2.667vw, 1.25rem); /* 2.667 = 100 / 37.5 */
+    --font-sz-mars: 0.75em;
     --font-sz-venus: 0.875em;
     --font-sz-earth: 1em;
     --font-sz-neptune: 1.125em;
@@ -78,7 +79,7 @@ a:visited:hover {
 .container {
     max-width: 75rem;
     margin: auto;
-    padding: var(--sp-st-o);
+    padding: 0 var(--sp-st-o);
 }
 
 /* Article

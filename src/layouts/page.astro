@@ -1,4 +1,7 @@
 ---
+import PageHeader from '../components/PageHeader.astro'
+import PageFooter from '../components/PageFooter.astro'
+
 const {
     title,
 } = Astro.props
@@ -22,15 +25,11 @@ const {
     </head>
     <body>
         <div class="container">
-            <header>
-                <a href="/">The Archive of Random Material</a>
-            </header>
+            <PageHeader />
             <main>
                 <slot></slot>
             </main>
-            <footer>
-                <small>© 2022 Timothy Foster, All Rights Reserved</small>
-            </footer>
+            <PageFooter />
         </div>
     </body>
 </html>

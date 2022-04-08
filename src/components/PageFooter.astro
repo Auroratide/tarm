@@ -1,0 +1,34 @@
+---
+import GithubIcon from './GithubIcon.astro'
+const currentYear = new Date().getFullYear()
+---
+
+<footer>
+    <small class="license">&copy; {currentYear} <a href="https://auroratide.com">Auroratide</a>, All Rights Reserved</small>
+    <small class="source"><a href="https://github.com/Auroratide">
+        <span>Source</span>
+        <span><GithubIcon /></span>
+    </a></small>
+</footer>
+
+<style>
+    footer {
+        display: flex;
+        align-items: space-between;
+        border-top: var(--sp-st-h) solid var(--c-neutral);
+        padding: var(--sp-st-o) 0;
+        line-height: 1;
+    }
+
+    .license {
+        flex: 1;
+    }
+
+    .source a {
+        display: flex;
+    }
+
+    .source a span {
+        margin: 0 var(--sp-st-he);
+    }
+</style>
