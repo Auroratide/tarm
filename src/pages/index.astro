@@ -1,9 +1,6 @@
 ---
+import type { ResourceInfo } from '../types'
 import Page from '../layouts/page.astro'
-
-type ResourceInfo = {
-	title: string,
-}
 
 const resources = await Astro.glob<ResourceInfo>('./resources/*.md')
 ---
