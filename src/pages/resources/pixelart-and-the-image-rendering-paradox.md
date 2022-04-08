@@ -2,8 +2,8 @@
 layout: ../../layouts/resource.astro
 title: Pixelart and the image-rendering Paradox
 author: Timothy Foster
-resource: https://auroratide.com/posts/pixelart-and-the-image-rendering-paradox
-category: frontend
+resourceUrl: https://auroratide.com/posts/pixelart-and-the-image-rendering-paradox
+topic: frontend
 tags: [ css, pixelart, browser compatibility ]
 ---
 

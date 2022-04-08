@@ -2,8 +2,8 @@
 layout: ../../layouts/resource.astro
 title: You Probably Don't Need Media Queries Anymore
 author: Kathryn Grayson Nanz
-resource: https://dev.to/kathryngrayson/you-probably-dont-need-media-queries-anymore-a4j
-category: frontend
+resourceUrl: https://dev.to/kathryngrayson/you-probably-dont-need-media-queries-anymore-a4j
+topic: frontend
 tags: [ css, responsive design ]
 ---
 

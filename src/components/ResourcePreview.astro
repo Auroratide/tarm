@@ -1,0 +1,84 @@
+---
+import type { Resource } from '../types'
+
+type Props = {
+    resource: Resource,
+}
+
+const { resource } = Astro.props as Props
+---
+
+<a href={resource.url} aria-label={resource.frontmatter.title}>
+    <article>
+        <h2>{resource.frontmatter.title}</h2>
+        <p>By {resource.frontmatter.author}</p>
+        <p class="category-info">
+            <span class="topic">{resource.frontmatter.topic}</span>
+            <span class="tags">{resource.frontmatter.tags.map(tag =>
+                <span class="tag">{tag}</span>
+            )}</span>
+        </p>
+    </article>
+</a>
+
+<style>
+    article {
+        border-left: var(--sp-st-be) solid var(--c-neutral);
+        padding: 0 0 0 var(--sp-st-s);
+        margin-bottom: var(--sp-st-s);
+        transition: margin-left 0.15s ease-in-out;
+    }
+
+    article h2 {
+        font-size: var(--font-sz-neptune);
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a p {
+        color: var(--c-bg-text);
+    }
+
+    a:hover article,
+    a:focus article {
+        border-color: currentColor;
+        margin-left: var(--sp-st-o);
+    }
+
+    article p {
+        margin-bottom: 0;    
+    }
+    
+    .category-info {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .topic {
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+
+    .topic::after {
+        content: '•';
+        display: inline-block;
+        margin: 0 var(--sp-st-c);
+    }
+
+    .tags {
+        font-size: var(--font-sz-venus);
+    }
+
+    .tag {
+        display: inline-block;
+        margin: 0 var(--sp-st-c);
+    }
+
+    .tag:first-child {
+        margin-left: 0;
+    }
+</style>

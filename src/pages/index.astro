@@ -1,6 +1,7 @@
 ---
 import type { ResourceInfo } from '../types'
 import Page from '../layouts/page.astro'
+import ResourcePreview from '../components/ResourcePreview.astro'
 
 const resources = await Astro.glob<ResourceInfo>('./resources/*.md')
 ---
@@ -9,7 +10,14 @@ const resources = await Astro.glob<ResourceInfo>('./resources/*.md')
 	<h1>Resources</h1>
 	<ul>
 		{resources.map(resource => (
-			<li><a href={resource.url}>{resource.frontmatter.title}</a></li>
+			<li><ResourcePreview resource={resource} /></li>
 		))}
 	</ul>
 </Page>
+
+<style>
+	ul {
+		list-style: none;
+		padding: 0;
+	}
+</style>

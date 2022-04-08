@@ -11,7 +11,7 @@ const { content } = Astro.props
             <dt>Author</dt>
             <dd>{content.author}</dd>
             <dt>Resource</dt>
-            <dd><a href={content.resource}>{content.title}</a></dd>
+            <dd><a href={content.resourceUrl}>{content.title}</a></dd>
         </dl>
         <slot></slot>
     </article>
