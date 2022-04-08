@@ -84,27 +84,23 @@ a:visited:hover {
 
 /* Article
  * ========================================================================= */
-article h1,
-article h2,
-article h3,
-article h4,
-article h5,
-article h6 {
+h1, h2, h3,
+h4, h5, h6 {
     font-weight: bold;
     line-height: 1;
     margin-bottom: var(--sp-st-be);
     padding-top: var(--sp-st-o);
 }
 
-article h1 {
+h1 {
     font-size: var(--font-sz-jupiter);
     padding-top: 0;
 }
-article h2 { font-size: var(--font-sz-saturn); }
-article h3 { font-size: var(--font-sz-uranus); }
-article h4 { font-size: var(--font-sz-earth); }
-article h5 { font-size: var(--font-sz-venus); }
-article h6 {
+h2 { font-size: var(--font-sz-saturn); }
+h3 { font-size: var(--font-sz-uranus); }
+h4 { font-size: var(--font-sz-earth); }
+h5 { font-size: var(--font-sz-venus); }
+h6 {
     font-size: var(--font-sz-venus);
     font-style: italic;
 }
