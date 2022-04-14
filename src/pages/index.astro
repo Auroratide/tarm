@@ -16,6 +16,10 @@ const resources = await Astro.glob<ResourceInfo>('./resources/*.md')
 </Page>
 
 <style>
+	h1 {
+		margin-bottom: var(--sp-st-o);
+	}
+
 	ul {
 		list-style: none;
 		padding: 0;
