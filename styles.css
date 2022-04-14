@@ -1,0 +1,180 @@
+/* Theme
+ * ========================================================================= */
+:root {
+    --font-reg: 'Source Sans Pro', sans-serif;
+    --font-code: 'Source Code Pro', monospace;
+    --font-sz-base: clamp(1rem, 2.667vw, 1.25rem); /* 2.667 = 100 / 37.5 */
+    --font-sz-mars: 0.75em;
+    --font-sz-venus: 0.875em;
+    --font-sz-earth: 1em;
+    --font-sz-neptune: 1.125em;
+    --font-sz-uranus: 1.25em;
+    --font-sz-saturn: 1.5em;
+    --font-sz-jupiter: 2em;
+
+    --sp-st-h: 0.0625em;
+    --sp-st-he: 0.125em;
+    --sp-st-be: 0.25em;
+    --sp-st-c: 0.375em;
+    --sp-st-o: 0.5em;
+    --sp-st-s: 1em;
+    --sp-st-ge: 2em;
+
+    --c-bg: hsl(240, 0%, 94%);
+    --c-bg-text: hsl(0, 0%, 5%);
+    --c-primary: hsl(210, 68%, 43%);
+    --c-primary-dark: hsl(212, 68%, 38%);
+    --c-primary-light: hsl(210, 72%, 57%);
+    --c-secondary: hsl(262, 38%, 52%);
+    --c-secondary-dark: hsl(262, 38%, 47%);
+    --c-neutral: hsl(0, 0%, 82%);
+    --c-neutral-light: hsl(0, 0%, 91%);
+    --c-shade: hsla(0, 0%, 0%, 0.25);
+
+    --c-code-comment: #008800;
+    --c-code-keyword: #0060ff;
+    --c-code-literal: #a85f30;
+    --c-code-name: #0080aa;
+    --c-code-string:  #a31515;
+    --c-code-annotation:  #808000;
+}
+
+/* Base
+ * ========================================================================= */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+body {
+    font-family: var(--font-reg);
+    font-size: var(--font-sz-base);
+    min-height: 100vh;
+    background-color: var(--c-bg);
+    color: var(--c-bg-text);
+    padding: 0;
+}
+
+code {
+    font-family: var(--font-code);
+}
+
+a {
+    color: var(--c-primary);
+}
+
+a:hover {
+    color: var(--c-primary-dark);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--c-secondary);
+}
+
+a:visited:hover {
+    color: var(--c-secondary-dark);
+}
+
+.container {
+    max-width: 75rem;
+    margin: auto;
+    padding: 0 var(--sp-st-o);
+}
+
+/* Article
+ * ========================================================================= */
+h1, h2, h3,
+h4, h5, h6 {
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: var(--sp-st-be);
+    padding-top: var(--sp-st-o);
+}
+
+h1 {
+    font-size: var(--font-sz-jupiter);
+    padding-top: 0;
+}
+h2 { font-size: var(--font-sz-saturn); }
+h3 { font-size: var(--font-sz-uranus); }
+h4 { font-size: var(--font-sz-earth); }
+h5 { font-size: var(--font-sz-venus); }
+h6 {
+    font-size: var(--font-sz-venus);
+    font-style: italic;
+}
+
+article p {
+    line-height: 1.5;
+    margin-bottom: var(--sp-st-s);
+}
+
+article ul,
+article ol {
+    padding-left: clamp(var(--sp-st-s), 2.667vw, var(--sp-st-ge));
+}
+
+article li {
+    line-height: 1.5;
+    margin-bottom: var(--sp-st-o);
+}
+
+article code {
+    background: var(--c-neutral);
+    font-size: var(--font-sz-venus);
+    display: inline-block;
+    padding: 0 var(--sp-st-c);
+    border-radius: 0.25em;
+}
+
+/* Code
+ * ========================================================================= */
+pre code {
+    display: block;
+    border: var(--sp-st-h) solid var(--c-primary-light);
+    padding: var(--sp-st-o);
+    box-shadow: 0 var(--sp-st-h) var(--sp-st-be) var(--c-shade) inset;
+    background: var(--c-neutral-light);
+}
+
+code .comment {
+    color: var(--c-code-comment);
+}
+
+code .keyword,
+code .attr-name,
+code .rule,
+code .property {
+    color: var(--c-code-keyword);
+}
+
+code .number,
+code .boolean {
+    color: var(--c-code-literal);
+}
+
+code .string,
+code .regex,
+code .attr-value {
+    color: var(--c-code-string);
+}
+
+code .class-name,
+code .selector,
+code .tag > .tag {
+    color: var(--c-code-name);
+}
+
+code .function,
+code .pseudo-class {
+    font-weight: bold;
+}
+
+code .doctype {
+    color: var(--c-code-annotation);
+}
+
+code .tag > .punctuation {
+    color: var(--c-code-default);
+}

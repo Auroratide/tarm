@@ -1,0 +1,73 @@
+<!DOCTYPE html><html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+        <meta name="author" content="Timothy Foster, Auroratide">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="icon" href="favicon.png">
+
+        <link rel="stylesheet" href="/styles.css">
+
+        <title>You Probably Don&#39;t Need Media Queries Anymore - The Archive of Random Material</title>
+    <link rel="stylesheet" href="/assets/asset.d4f024a1.css"></link>
+</head>
+    <body>
+        <div class="container">
+            <header class="astro-PWYSDBZL">
+    <span class="title astro-PWYSDBZL"><a href="/" class="astro-PWYSDBZL">The Archive of Random Material</a></span>
+    <span class="subtitle astro-PWYSDBZL">Just a collection of summarized resources I find useful</span>
+</header>
+
+
+            <main>
+                <article class="astro-NOLV72DB">
+        <h1 class="astro-NOLV72DB">You Probably Don&#39;t Need Media Queries Anymore</h1>
+        <dl class="resource-info astro-NOLV72DB">
+            <dt class="astro-NOLV72DB">Author</dt>
+            <dd class="astro-NOLV72DB">Kathryn Grayson Nanz</dd>
+            <dt class="astro-NOLV72DB">Resource</dt>
+            <dd class="astro-NOLV72DB"><a href="https://dev.to/kathryngrayson/you-probably-dont-need-media-queries-anymore-a4j" class="astro-NOLV72DB">You Probably Don&#39;t Need Media Queries Anymore</a></dd>
+        </dl>
+        <p><strong>Responsive design</strong> is the art of making a web page beautiful on all devices, regardless of size. That is, the same website should look good on mobile <em>and</em> on desktop.</p><p>CSS offers tools to achieve this; among the most prominent of those tools is <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media">@media queries</a>. These let developers specify breakpoints so that different CSS gets applied depending on the screen size.</p><h2 id="features">Features</h2><p>However, CSS has evolved to offer other tools that support responsive design just as well, if not better. There is:</p><ul>
+<li><strong><a href="https://css-tricks.com/snippets/css/complete-guide-grid/">Grid</a></strong> - With features like <code>auto-fit</code> and the <code>fr</code> unit, grids can be made to automatically adjust to the device’s size. A good example is <a href="https://auroratide.com/art">my website’s art page</a>.</li>
+<li><strong><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox">Flexbox</a></strong> - The <code>flex-wrap</code> attribute in particular means elements can wrap to new rows on overflow.</li>
+<li><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio">aspect-ratio</a></strong> - Allows images to keep a specific aspect ratio.</li>
+<li><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clamp">clamp()</a></strong> - Allows an element’s size to adjust flexibly with its container’s size, but be bounded on both ends to accomodate very small or very large screens.</li>
+<li><strong><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#relative_length_units">vw and vh</a></strong> - CSS units that are a percentage of the screen’s width and height. Very useful for fullscreen concepts and ensuring content stays above the fold.</li>
+<li><strong><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#ems_and_rems">em and rem</a></strong> - CSS units that scale relative to its parent element or document respectively. These work well with <code>clamp()</code> and the <code>vw</code> features to create a fluid typography system.</li>
+</ul><h2 id="benefits">Benefits</h2><p><strong>Cognitive Simplicity</strong>: Avoiding media queries pushes us into a <strong>fluid design</strong> model, which is a subtle evolution to responsive design. Instead of thinking about specific breakpoints (which may or not be tied to specific kinds of devices), we just design for <em>everything</em> and let the web page adapt.</p><p><strong>Code Simplicity</strong>: Rather than maintaining multiple mini-stylesheets for each important breakpoint, fluid design encourages a single set of rules that work universally.</p><h2 id="when-to-use-media">When to use @media</h2><p>There are still plenty of reasons to use @media:</p><ul>
+<li>When the fundamental design of an element changes (e.g. on small screens a nav becomes a hamburger menu)</li>
+<li>Accessibility preferences like resuced motion or color scheme</li>
+<li>Targetting specific mediums, like for printing a document</li>
+</ul>
+    </article>
+            </main>
+            <footer class="astro-Z2MEQF67">
+    <small class="license astro-Z2MEQF67">&copy; 2022 <a href="https://auroratide.com" class="astro-Z2MEQF67">Auroratide</a>, All Rights Reserved</small>
+    <small class="source astro-Z2MEQF67"><a href="https://github.com/Auroratide/tarm" class="astro-Z2MEQF67">
+        <span class="astro-Z2MEQF67">Source</span>
+        <span class="astro-Z2MEQF67"><svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2350 2314.8" xml:space="preserve" class="astro-TVUBJSGQ">
+<title>Github</title>
+<path d="M1175,0C525.8,0,0,525.8,0,1175c0,552.2,378.9,1010.5,890.1,1139.7c-5.9-14.7-8.8-35.3-8.8-55.8v-199.8H734.4
+	c-79.3,0-152.8-35.2-185.1-99.9c-38.2-70.5-44.1-179.2-141-246.8c-29.4-23.5-5.9-47,26.4-44.1c61.7,17.6,111.6,58.8,158.6,120.4
+	c47,61.7,67.6,76.4,155.7,76.4c41.1,0,105.7-2.9,164.5-11.8c32.3-82.3,88.1-155.7,155.7-190.9c-393.6-47-581.6-240.9-581.6-505.3
+	c0-114.6,49.9-223.3,132.2-317.3c-26.4-91.1-61.7-279.1,11.8-352.5c176.3,0,282,114.6,308.4,143.9c88.1-29.4,185.1-47,284.9-47
+	c102.8,0,196.8,17.6,284.9,47c26.4-29.4,132.2-143.9,308.4-143.9c70.5,70.5,38.2,261.4,8.8,352.5c82.3,91.1,129.3,202.7,129.3,317.3
+	c0,264.4-185.1,458.3-575.7,499.4c108.7,55.8,185.1,214.4,185.1,331.9V2256c0,8.8-2.9,17.6-2.9,26.4
+	C2021,2123.8,2350,1689.1,2350,1175C2350,525.8,1824.2,0,1175,0L1175,0z" class="astro-TVUBJSGQ"></path>
+</svg>
+
+
+</span>
+    </a></small>
+</footer>
+
+
+        </div>
+    </body></html>
+
