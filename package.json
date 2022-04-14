@@ -11,5 +11,9 @@
   },
   "devDependencies": {
     "astro": "^1.0.0-beta.0"
+  },
+  "author": {
+    "name": "Timothy Foster",
+    "url": "https://auroratide.com"
   }
 }
