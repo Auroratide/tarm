@@ -7,7 +7,7 @@ const { content } = Astro.props
 <Page title={content.title}>
     <article>
         <h1>{content.title}</h1>
-        <dl>
+        <dl class="resource-info">
             <dt>Author</dt>
             <dd>{content.author}</dd>
             <dt>Resource</dt>
@@ -16,3 +16,21 @@ const { content } = Astro.props
         <slot></slot>
     </article>
 </Page>
+
+<style>
+    .resource-info {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        font-size: var(--font-sz-venus);
+        padding-left: var(--sp-st-s);
+        border-left: var(--sp-st-be) solid var(--c-neutral);
+    }
+
+    .resource-info dt {
+        font-weight: bold;
+    }
+
+    .resource-info dt::after {
+        content: ':';
+    }
+</style>
