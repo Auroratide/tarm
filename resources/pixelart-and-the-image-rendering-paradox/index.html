@@ -9,18 +9,18 @@
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
 
-        <link rel="icon" href="favicon.png">
+        <link rel="icon" href="/tarm/favicon.png">
 
-        <link rel="stylesheet" href="/styles.css">
+        <link rel="stylesheet" href="/tarm/styles.css">
 
         <title>Pixelart and the image-rendering Paradox - The Archive of Random Material</title>
-    <link rel="stylesheet" href="/assets/asset.d4f024a1.css"></link>
+    <link rel="stylesheet" href="/assets/asset.ff8bdfb5.css"></link>
 </head>
     <body>
         <div class="container">
-            <header class="astro-PWYSDBZL">
-    <span class="title astro-PWYSDBZL"><a href="/" class="astro-PWYSDBZL">The Archive of Random Material</a></span>
-    <span class="subtitle astro-PWYSDBZL">Just a collection of summarized resources I find useful</span>
+            <header class="astro-CSRI7IM5">
+    <span class="title astro-CSRI7IM5"><a href="/tarm" class="astro-CSRI7IM5">The Archive of Random Material</a></span>
+    <span class="subtitle astro-CSRI7IM5">Just a collection of summarized resources I find useful</span>
 </header>
 
 
@@ -33,7 +33,7 @@
             <dt class="astro-NOLV72DB">Resource</dt>
             <dd class="astro-NOLV72DB"><a href="https://auroratide.com/posts/pixelart-and-the-image-rendering-paradox" class="astro-NOLV72DB">Pixelart and the image-rendering Paradox</a></dd>
         </dl>
-        <p>By default, upscaling a tiny image on a browser makes it blurry. This is devastating for pixelart.</p><p>CSS provides a property called <code>image-rendering</code> which effectively determines what algorithm is used to upscale an image. In the case of pixelart, we want the Nearest Neighbor algorithm, as it preserves the pixely nature of the image.</p><p>The problem? At least as of the time of the article’s writing, Chrome and Firefox supported the <code>pixelated</code> and <code>crisp-edges</code> values respective, but not the other. So, which do you use?</p><p>To maximize support, use:</p><pre class="language-css"><code is:raw class="language-css"><span class="token selector">.pixelart</span> <span class="token punctuation">{</span>
+        <p>By default, upscaling a tiny image on a browser makes it blurry. This is devastating for pixelart.</p><p>CSS provides a property called <code>image-rendering</code> which effectively determines what algorithm is used to upscale an image. In the case of pixelart, we want the Nearest Neighbor algorithm, as it preserves the pixely nature of the image.</p><p>The problem? At least as of the time of the article’s writing, Chrome and Firefox supported the <code>pixelated</code> and <code>crisp-edges</code> values respective, but not the other. So, which do you use?</p><p>To maximize support, use:</p><pre class="language-css"><code class="language-css"><span class="token selector">.pixelart</span> <span class="token punctuation">{</span>
     <span class="token property">image-rendering</span><span class="token punctuation">:</span> crisp-edges<span class="token punctuation">;</span>
     <span class="token property">image-rendering</span><span class="token punctuation">:</span> pixelated<span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre><p>The article goes into why (semantics) and the history behind this paradox.</p>
