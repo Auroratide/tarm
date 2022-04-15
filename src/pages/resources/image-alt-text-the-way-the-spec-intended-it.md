@@ -9,7 +9,7 @@ topic: frontend
 tags: [ html, accessibility, images, specification ]
 ---
 
-In HTML, you can give a text description to images, called the <dfn>alt text</dfn>. For the sake of accessibility (i.e. people who cannot see the image or for whom it takes a long time to download), you should _always_:
+<p>In HTML, you can give a text description to images, called the <dfn>alt text</dfn>. For the sake of accessibility (i.e. people who cannot see the image or for whom it takes a long time to download), you should _always_:</p>
 
 * Provide alt text
 * Or explicitly declare no alt text (for purely decorative images)
