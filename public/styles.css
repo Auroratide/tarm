@@ -178,3 +178,16 @@ code .doctype {
 code .tag > .punctuation {
     color: var(--c-code-default);
 }
+
+/* Input
+ * ========================================================================= */
+input[type="text"] {
+    font-size: var(--font-sz-earth);
+    border: var(--sp-st-h) solid var(--c-neutral);
+    border-bottom-width: var(--sp-st-be);
+    padding: var(--sp-st-he) var(--sp-st-be);
+}
+
+input[type="text"]:focus {
+    border-color: var(--c-primary);
+}
