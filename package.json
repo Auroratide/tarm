@@ -4,7 +4,7 @@
   "private": true,
   "license": "ISC",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "NODE_ENV=dev astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",

@@ -5,12 +5,15 @@ import PageFooter from '../components/PageFooter.astro'
 const {
     title,
 } = Astro.props
+
+const dev = process.env.NODE_ENV === 'dev'
+const base = dev ? '/' : '/tarm/'
 ---
 
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <base href="/tarm/" />
+        <base href={base} />
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
         <meta name="author" content="Timothy Foster, Auroratide" />
