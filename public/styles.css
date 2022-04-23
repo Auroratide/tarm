@@ -1,6 +1,7 @@
 /* Theme
  * ========================================================================= */
 :root {
+    --container: 50rem;
     --font-reg: 'Source Sans Pro', sans-serif;
     --font-code: 'Source Code Pro', monospace;
     --font-sz-base: clamp(1rem, 2.667vw, 1.25rem); /* 2.667 = 100 / 37.5 */
@@ -37,6 +38,10 @@
     --c-code-name: #0080aa;
     --c-code-string:  #a31515;
     --c-code-annotation:  #808000;
+
+    --skin-body: hsl(0, 0%, 87%);
+    --skin-content: hsl(240, 0%, 94%);
+    --skin-text: hsl(240, 2%, 13%);
 }
 
 /* Base
@@ -50,8 +55,9 @@ body {
     font-family: var(--font-reg);
     font-size: var(--font-sz-base);
     min-height: 100vh;
-    background-color: var(--c-bg);
-    color: var(--c-bg-text);
+    background-color: var(--skin-body);
+    color: var(--skin-text);
+    margin: 0;
     padding: 0;
 }
 
@@ -77,7 +83,8 @@ a:visited:hover {
 }
 
 .container {
-    max-width: 75rem;
+    max-width: var(--container);
+    background-color: var(--skin-content);
     margin: auto;
     padding: 0 var(--sp-st-o);
 }
