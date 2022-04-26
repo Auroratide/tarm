@@ -1,8 +1,6 @@
 /* Theme
  * ========================================================================= */
 :root {
-    --container: 50rem;
-
     --c-bg: hsl(240, 0%, 94%);
     --c-bg-text: hsl(0, 0%, 5%);
     --c-primary: hsl(210, 68%, 43%);
@@ -24,15 +22,6 @@
     --skin-body: hsl(0, 0%, 87%);
     --skin-content: hsl(240, 0%, 94%);
     --skin-text: hsl(240, 2%, 13%);
-}
-
-/* Base
- * ========================================================================= */
-.container {
-    max-width: var(--container);
-    background-color: var(--skin-content);
-    margin: auto;
-    padding: 0 var(--sp-st-o);
 }
 
 /* Article
