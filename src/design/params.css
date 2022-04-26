@@ -41,11 +41,11 @@
 
     /* Based on the Periodic Table of Elements */
     /* See: https://auroratide.com/posts/using-astronomy-chemistry-and-meteorology-to-name-css-variables */
-    --sp-st-h: 0.0625em;
-    --sp-st-he: 0.125em;
-    --sp-st-be: 0.25em;
-    --sp-st-c: 0.375em;
-    --sp-st-o: 0.5em;
-    --sp-st-s: 1em;
-    --sp-st-ge: 2em;
+    --sp-st-h: 0.075em;
+    --sp-st-he: 0.15em;
+    --sp-st-be: 0.3em;
+    --sp-st-c: 0.45em;
+    --sp-st-o: 0.6em;
+    --sp-st-s: 1.2em;
+    --sp-st-ge: 2.4em;
 }
