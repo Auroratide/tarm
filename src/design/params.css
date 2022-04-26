@@ -1,0 +1,29 @@
+:root {
+    --c-grey: hsl(0, 0%, 87%);
+    --c-offwhite: hsl(240, 0%, 94%);
+    --c-offblack: hsl(240, 2%, 13%);
+
+    --font-reg: 'Source Sans Pro', sans-serif;
+    --font-code: 'Source Code Pro', monospace;
+    --font-sz-base: clamp(1rem, 2.667vw, 1.25rem); /* 2.667 = 100 / 37.5 */
+
+    /* Based on relative planet sizes */
+    /* See: https://auroratide.com/posts/using-astronomy-chemistry-and-meteorology-to-name-css-variables */
+    --font-sz-mars: 0.75em;
+    --font-sz-venus: 0.875em;
+    --font-sz-earth: 1em;
+    --font-sz-neptune: 1.125em;
+    --font-sz-uranus: 1.25em;
+    --font-sz-saturn: 1.5em;
+    --font-sz-jupiter: 2em;
+
+    /* Based on the Periodic Table of Elements */
+    /* See: https://auroratide.com/posts/using-astronomy-chemistry-and-meteorology-to-name-css-variables */
+    --sp-st-h: 0.0625em;
+    --sp-st-he: 0.125em;
+    --sp-st-be: 0.25em;
+    --sp-st-c: 0.375em;
+    --sp-st-o: 0.5em;
+    --sp-st-s: 1em;
+    --sp-st-ge: 2em;
+}

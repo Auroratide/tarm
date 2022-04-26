@@ -1,0 +1,5 @@
+:root {
+    --skin-body: var(--c-grey);
+    --skin-content: var(--c-offwhite);
+    --skin-text: var(--c-offblack);
+}

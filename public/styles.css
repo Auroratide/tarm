@@ -2,24 +2,6 @@
  * ========================================================================= */
 :root {
     --container: 50rem;
-    --font-reg: 'Source Sans Pro', sans-serif;
-    --font-code: 'Source Code Pro', monospace;
-    --font-sz-base: clamp(1rem, 2.667vw, 1.25rem); /* 2.667 = 100 / 37.5 */
-    --font-sz-mars: 0.75em;
-    --font-sz-venus: 0.875em;
-    --font-sz-earth: 1em;
-    --font-sz-neptune: 1.125em;
-    --font-sz-uranus: 1.25em;
-    --font-sz-saturn: 1.5em;
-    --font-sz-jupiter: 2em;
-
-    --sp-st-h: 0.0625em;
-    --sp-st-he: 0.125em;
-    --sp-st-be: 0.25em;
-    --sp-st-c: 0.375em;
-    --sp-st-o: 0.5em;
-    --sp-st-s: 1em;
-    --sp-st-ge: 2em;
 
     --c-bg: hsl(240, 0%, 94%);
     --c-bg-text: hsl(0, 0%, 5%);
@@ -46,25 +28,6 @@
 
 /* Base
  * ========================================================================= */
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin-top: 0;
-}
-
-body {
-    font-family: var(--font-reg);
-    font-size: var(--font-sz-base);
-    min-height: 100vh;
-    background-color: var(--skin-body);
-    color: var(--skin-text);
-    margin: 0;
-    padding: 0;
-}
-
-code {
-    font-family: var(--font-code);
-}
-
 a {
     color: var(--c-primary);
 }
