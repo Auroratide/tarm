@@ -1,15 +1,20 @@
 ---
 import Page from './page.astro'
+import CoverImage from '../components/CoverImage.astro'
+import authors from '../authors.json'
 
 const { content } = Astro.props
+
+const author = authors[content.author]
 ---
 
 <Page title={content.title}>
     <article>
+        <CoverImage />
         <h1>{content.title}</h1>
         <dl class="resource-info">
             <dt>Author</dt>
-            <dd>{content.author}</dd>
+            <dd><a href={author.link}>{author.name}</a></dd>
             <dt>Resource</dt>
             <dd><a href={content.resourceUrl}>{content.title}</a></dd>
         </dl>

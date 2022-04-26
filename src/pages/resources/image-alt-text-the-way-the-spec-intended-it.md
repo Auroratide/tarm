@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/resource.astro
 title: Image Alt Text, the Way the Spec Intended It
-author: Timothy Foster
+author: timothy-foster
 resourceUrl: https://auroratide.com/posts/image-alt-text
 publishedAt: 2021-07-16
 addedAt: 2022-04-15

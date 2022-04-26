@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/resource.astro
 title: Software Effort Estimation Considered Harmful
-author: Matt Rogish
+author: matt-rogish
 resourceUrl: http://mattrogish.com/blog/2012/08/16/software-effort-estimation-considered-harmful/
 publishedAt: 2012-08-16
 addedAt: 2022-04-15

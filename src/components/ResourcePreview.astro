@@ -1,17 +1,19 @@
 ---
 import type { Resource } from '../resources'
+import authors from '../authors.json'
 
 type Props = {
     resource: Resource,
 }
 
 const { resource } = Astro.props as Props
+const author = authors[resource.frontmatter.author]
 ---
 
 <a href={resource.url} aria-label={resource.frontmatter.title}>
     <article>
         <h2>{resource.frontmatter.title}</h2>
-        <p>By {resource.frontmatter.author}</p>
+        <p>By {author.name}</p>
         <p class="category-info">
             <span class="topic">{resource.frontmatter.topic}</span>
             <span class="tags">{resource.frontmatter.tags.map(tag =>

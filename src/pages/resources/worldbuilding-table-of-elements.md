@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/resource.astro
 title: Worldbuilding Table of Elements
-author: u/OtherAtlas
+author: u-otheratlas
 resourceUrl: https://www.reddit.com/r/worldbuilding/comments/u55hfb/worldbuilding_table_of_elements/
 publishedAt: 2022-04-17
 addedAt: 2022-04-17
