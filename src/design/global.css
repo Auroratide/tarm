@@ -16,3 +16,16 @@ body {
 code {
     font-family: var(--font-code);
 }
+
+a {
+    color: var(--skin-primary-text);
+}
+
+a:hover {
+    filter: brightness(0.875);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--skin-visited);
+}

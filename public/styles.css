@@ -28,23 +28,6 @@
 
 /* Base
  * ========================================================================= */
-a {
-    color: var(--c-primary);
-}
-
-a:hover {
-    color: var(--c-primary-dark);
-    text-decoration: none;
-}
-
-a:visited {
-    color: var(--c-secondary);
-}
-
-a:visited:hover {
-    color: var(--c-secondary-dark);
-}
-
 .container {
     max-width: var(--container);
     background-color: var(--skin-content);

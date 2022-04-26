@@ -2,4 +2,9 @@
     --skin-body: var(--c-grey);
     --skin-content: var(--c-offwhite);
     --skin-text: var(--c-offblack);
+
+    --skin-primary: var(--c-aurorablue-l);
+    --skin-primary-text: var(--c-aurorablue-d);
+    --skin-visited: var(--c-fablelavender-d);
+    --skin-visited-hover: var(--c-fablelavender-l);
 }

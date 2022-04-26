@@ -3,6 +3,27 @@
     --c-offwhite: hsl(240, 0%, 94%);
     --c-offblack: hsl(240, 2%, 13%);
 
+    --c-aurorablue-l: hsl(210, 72%, 57%);
+    --c-aurorablue-d: hsl(210, 68%, 45%);
+    --c-auroragreen-l: hsl(155, 50%, 50%);
+    --c-auroragreen-d: hsl(155, 44%, 35%);
+    --c-fablelavender-l: hsl(262, 64%, 68%);
+    --c-fablelavender-d: hsl(262, 58%, 58%);
+    --c-fablepink-l: hsl(330, 88%, 68%);
+    --c-fablepink-d: hsl(330, 60%, 49%);
+    --c-livianyellow-l: hsl(48, 94%, 42%);
+    --c-livianyellow-d: hsl(48, 86%, 29%);
+    --c-autumnred-l: hsl(357, 98%, 60%);
+    --c-autumnred-d: hsl(357, 68%, 45%);
+    --c-autumnorange-l: hsl(34, 70%, 52%);
+    --c-autumnorange-d: hsl(34, 60%, 37%);
+    --c-aellagreen-l: hsl(102, 56%, 46%);
+    --c-aellagreen-d: hsl(102, 46%, 36%);
+    --c-eventideblack-l: hsl(240, 8%, 56%);
+    --c-eventideblack-d: hsl(240, 8%, 20%);
+    --c-windergrey-l: hsl(200, 12%, 68%);
+    --c-wintergrey-d: hsl(200, 8%, 44%);
+
     --font-reg: 'Source Sans Pro', sans-serif;
     --font-code: 'Source Code Pro', monospace;
     --font-sz-base: clamp(1rem, 2.667vw, 1.25rem); /* 2.667 = 100 / 37.5 */
