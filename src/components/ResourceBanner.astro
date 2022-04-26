@@ -1,0 +1,68 @@
+---
+import CoverImage from './CoverImage.astro'
+
+const {
+    title,
+    author,
+    resourceUrl,
+} = Astro.props
+---
+
+<header>
+    <h1 class="title">{title}</h1>
+    <address class="author">By <a rel="author" href={author.link}>{author.name}</a></address>
+    <span class="resource"><a class="button" href={resourceUrl}>See original</a></span>
+    <div class="cover"><CoverImage /></div>
+</header>
+
+<style>
+    header {
+        display: grid;
+        grid-template:
+            "title title" auto
+            "author cover" 1fr
+            "resource cover" auto
+            / 2fr 1fr;
+        row-gap: var(--sp-st-o);
+        margin-bottom: var(--sp-st-ge);
+        background-color: var(--skin-highlight);
+        margin-left: calc(-1 * var(--sp-st-o));
+        margin-right: calc(-1 * var(--sp-st-o));
+        padding: var(--sp-st-o);
+    }
+
+    .title {
+        grid-area: title;
+        text-align: center;
+        font-size: var(--font-sz-jupiter);
+        font-weight: normal;
+    }
+
+    .author {
+        grid-area: author;
+        place-self: end start;
+        font-style: normal;
+    }
+
+    .resource {
+        grid-area: resource;
+    }
+
+    .cover {
+        grid-area: cover;
+    }
+
+    @media screen and (min-width: 50rem) {
+        header {
+            grid-template:
+            "title cover" auto
+            "author cover" 1fr
+            "resource cover" auto
+            / 5fr 2fr;
+        }
+
+        .title {
+            text-align: left;
+        }
+    }
+</style>

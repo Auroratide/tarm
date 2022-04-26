@@ -29,3 +29,40 @@ a:hover {
 a:visited {
     color: var(--skin-visited);
 }
+
+a.button {
+    --btn-pixel: 0.7em;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: var(--skin-primary);
+    color: var(--c-white);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 var(--sp-st-ge) 0 var(--sp-st-s);
+    height: calc(3 * var(--btn-pixel));
+}
+
+a.button::after {
+    display: block;
+    width: var(--btn-pixel);
+    height: var(--btn-pixel);
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: '';
+    background-color: var(--c-aurorablue-d);
+    box-shadow:
+        var(--btn-pixel) var(--btn-pixel) var(--c-aurorablue-d),
+        0em calc(2 * var(--btn-pixel)) var(--c-aurorablue-d),
+        0em var(--btn-pixel) var(--c-aurorablue-l);
+    transition: right 0.1s ease-in-out;
+}
+
+a.button:hover::after,
+a.button:active::after,
+a.button:focus::after {
+    right: calc(-1 * var(--btn-pixel));
+}
