@@ -1,5 +1,6 @@
 ---
 import '../design/index.css'
+import Container from '../components/Container.astro'
 import PageHeader from '../components/PageHeader.astro'
 import PageFooter from '../components/PageFooter.astro'
 
@@ -32,12 +33,10 @@ const base = dev ? '/' : '/tarm/'
         <script is:inline src="//unpkg.com/@ungap/custom-elements/es.js"></script>
     </head>
     <body>
-        <div class="container">
+        <Container>
             <PageHeader />
-            <main>
-                <slot></slot>
-            </main>
+            <main><slot></slot></main>
             <PageFooter />
-        </div>
+        </Container>
     </body>
 </html>

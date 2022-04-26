@@ -1,6 +1,0 @@
-.container {
-    max-width: 50rem;
-    margin: auto;
-    padding: var(--sp-st-be) var(--sp-st-o);
-    background-color: var(--skin-content);
-}
