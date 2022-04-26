@@ -1,31 +1,57 @@
+---
+import TarmLogo from './TarmLogo.astro'
+---
+
 <header>
-    <span class="title"><a href="">The Archive of Random Material</a></span>
-    <span class="subtitle">Just a collection of summarized resources I find useful</span>
+    <a class="grid" href="">
+        <span class="logo" aria-hidden="true"><TarmLogo /></span>
+        <span class="title">The Archive of Random Material</span>
+        <span class="subtitle">Just a collection of summarized resources I find useful</span>
+    </a>
 </header>
 
 <style>
     header {
-        display: flex;
-        flex-direction: column;
-        border-bottom: var(--sp-st-h) solid var(--c-neutral);
-        padding: var(--sp-st-be) 0;
-        margin-bottom: var(--sp-st-s);
+        margin-bottom: var(--sp-st-o);
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--skin-primary-text);
+    }
+
+    a:hover .title {
+        text-decoration: underline;
+    }
+
+    .grid {
+        --height: 2.5em;
+
+        display: inline-grid;
+        grid-template:
+            "logo title" 1fr
+            "logo subtitle" 1fr
+            / var(--height) 1fr;
+        height: var(--height);
+        column-gap: var(--sp-st-be);
+    }
+
+    .logo {
+        grid-area: logo;
+        background-color: var(--skin-highlight);
+        padding: var(--sp-st-be);
+        border-radius: var(--sp-st-o);
+        margin: var(--sp-st-he);
     }
 
     .title {
+        grid-area: title;
         font-weight: bold;
     }
 
-    .title a {
-        color: var(--c-primary);
-        text-decoration: none;
-    }
-
-    .title a:hover {
-        color: var(--c-primary-dark);
-    }
-
     .subtitle {
+        grid-area: subtitle;
         font-size: var(--font-sz-mars);
+        color: var(--skin-text);
     }
 </style>

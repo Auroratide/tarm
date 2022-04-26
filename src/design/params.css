@@ -1,6 +1,7 @@
 :root {
     --c-grey: hsl(0, 0%, 87%);
     --c-offwhite: hsl(240, 0%, 94%);
+    --c-white: hsl(240, 0%, 100%);
     --c-offblack: hsl(240, 2%, 13%);
 
     --c-aurorablue-l: hsl(210, 72%, 57%);
@@ -21,7 +22,7 @@
     --c-aellagreen-d: hsl(102, 46%, 36%);
     --c-eventideblack-l: hsl(240, 8%, 56%);
     --c-eventideblack-d: hsl(240, 8%, 20%);
-    --c-windergrey-l: hsl(200, 12%, 68%);
+    --c-wintergrey-l: hsl(200, 12%, 68%);
     --c-wintergrey-d: hsl(200, 8%, 44%);
 
     --font-reg: 'Source Sans Pro', sans-serif;

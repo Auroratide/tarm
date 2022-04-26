@@ -1,4 +1,5 @@
 :root {
+    --skin-highlight: var(--c-white);
     --skin-body: var(--c-grey);
     --skin-content: var(--c-offwhite);
     --skin-text: var(--c-offblack);
@@ -7,4 +8,15 @@
     --skin-primary-text: var(--c-aurorablue-d);
     --skin-visited: var(--c-fablelavender-d);
     --skin-visited-hover: var(--c-fablelavender-l);
+
+    --skin-logo-00: var(--c-eventideblack-d);
+    --skin-logo-10: var(--c-wintergrey-l);
+    --skin-logo-30: var(--c-aellagreen-l);
+    --skin-logo-11: var(--c-autumnorange-l);
+    --skin-logo-21: var(--c-aurorablue-l);
+    --skin-logo-22: var(--c-fablepink-l);
+    --skin-logo-32: var(--c-fablelavender-l);
+    --skin-logo-03: var(--c-autumnred-l);
+    --skin-logo-13: var(--c-auroragreen-l);
+    --skin-logo-33: var(--c-livianyellow-l);
 }
