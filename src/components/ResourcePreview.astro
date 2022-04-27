@@ -27,10 +27,21 @@ const theme = themes[resource.frontmatter.topic]
 
 <style>
     article {
-        border-left: var(--sp-st-be) solid var(--skin-body);
-        padding: 0 0 0 var(--sp-st-s);
-        margin-bottom: var(--sp-st-s);
-        transition: margin-left 0.15s ease-in-out;
+        position: relative;
+        padding: 0 0 0 calc(var(--sp-st-s) + var(--sp-st-be));
+        margin-bottom: var(--sp-st-cd);
+    }
+
+    article::before {
+        content: '';
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        background-color: var(--skin-primary);
+        position: absolute;
+        top: var(--sp-st-h);
+        left: 0;
+        transition: height 0.15s ease-in-out;
     }
 
     article h2 {
@@ -47,10 +58,9 @@ const theme = themes[resource.frontmatter.topic]
         color: var(--skin-text);
     }
 
-    a:hover article,
-    a:focus article {
-        border-color: currentColor;
-        margin-left: var(--sp-st-o);
+    a:hover article::before,
+    a:focus article::before {
+        height: 100%;
     }
 
     article p {
@@ -85,5 +95,11 @@ const theme = themes[resource.frontmatter.topic]
 
     .tag:first-child {
         margin-left: 0;
+    }
+
+    @media (prefers-reduced-motion) {
+        article::before {
+            transition: none;
+        }
     }
 </style>
