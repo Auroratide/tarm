@@ -1,7 +1,7 @@
 ---
 import Page from './page.astro'
 import ResourceBanner from '../components/ResourceBanner.astro'
-import CoverImage from '../components/CoverImage.astro'
+import Article from '../components/Article.astro'
 import authors from '../authors.json'
 
 const { content } = Astro.props
@@ -10,10 +10,10 @@ const author = authors[content.author]
 ---
 
 <Page title={content.title}>
-    <article>
+    <Article>
         <ResourceBanner title={content.title} author={author} resourceUrl={content.resourceUrl} />
         <slot></slot>
-    </article>
+    </Article>
 </Page>
 
 <style>

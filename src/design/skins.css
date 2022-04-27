@@ -19,4 +19,11 @@
     --skin-logo-03: var(--c-autumnred-l);
     --skin-logo-13: var(--c-auroragreen-l);
     --skin-logo-33: var(--c-livianyellow-l);
+
+    --skin-code-comment: #008800;
+    --skin-code-keyword: #0060ff;
+    --skin-code-literal: #a85f30;
+    --skin-code-name: #0080aa;
+    --skin-code-string:  #a31515;
+    --skin-code-annotation:  #808000;
 }

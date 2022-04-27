@@ -66,3 +66,96 @@ a.button:active::after,
 a.button:focus::after {
     right: calc(-1 * var(--btn-pixel));
 }
+
+h1, h2, h3,
+h4, h5, h6 {
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: var(--sp-st-be);
+    padding-top: var(--sp-st-o);
+}
+
+h1 {
+    font-size: var(--font-sz-jupiter);
+    padding-top: 0;
+}
+h2 { font-size: var(--font-sz-saturn); }
+h3 { font-size: var(--font-sz-uranus); }
+h4 { font-size: var(--font-sz-earth); }
+h5 { font-size: var(--font-sz-venus); }
+h6 {
+    font-size: var(--font-sz-venus);
+    font-style: italic;
+}
+
+/* Input
+ * ========================================================================= */
+input[type="text"] {
+    font-size: var(--font-sz-earth);
+    border: var(--sp-st-h) solid var(--skin-body);
+    border-bottom-width: var(--sp-st-be);
+    padding: var(--sp-st-he) var(--sp-st-be);
+}
+
+input[type="text"]:focus {
+    border-color: var(--skin-primary);
+}
+
+/* Code
+ * ========================================================================= */
+code {
+    background: var(--skin-body);
+    font-size: var(--font-sz-venus);
+    display: inline-block;
+    padding: 0 var(--sp-st-c);
+    border-radius: 0.25em;
+}
+
+pre code {
+    display: block;
+    border: var(--sp-st-h) solid var(--skin-primary);
+    padding: var(--sp-st-o);
+    box-shadow: 0 var(--sp-st-h) var(--sp-st-be) var(--c-shade) inset;
+    background: var(--skin-highlight);
+}
+
+code .comment {
+    color: var(--skin-code-comment);
+}
+
+code .keyword,
+code .attr-name,
+code .rule,
+code .property {
+    color: var(--skin-code-keyword);
+}
+
+code .number,
+code .boolean {
+    color: var(--skin-code-literal);
+}
+
+code .string,
+code .regex,
+code .attr-value {
+    color: var(--skin-code-string);
+}
+
+code .class-name,
+code .selector,
+code .tag > .tag {
+    color: var(--c-code-name);
+}
+
+code .function,
+code .pseudo-class {
+    font-weight: bold;
+}
+
+code .doctype {
+    color: var(--skin-code-annotation);
+}
+
+code .tag > .punctuation {
+    color: var(--skin-code-default);
+}

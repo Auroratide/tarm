@@ -25,7 +25,7 @@ const author = authors[resource.frontmatter.author]
 
 <style>
     article {
-        border-left: var(--sp-st-be) solid var(--c-neutral);
+        border-left: var(--sp-st-be) solid var(--skin-body);
         padding: 0 0 0 var(--sp-st-s);
         margin-bottom: var(--sp-st-s);
         transition: margin-left 0.15s ease-in-out;
@@ -34,6 +34,7 @@ const author = authors[resource.frontmatter.author]
     article h2 {
         font-size: var(--font-sz-neptune);
         padding: 0;
+        margin-bottom: var(--sp-st-c);
     }
 
     a {
@@ -41,7 +42,7 @@ const author = authors[resource.frontmatter.author]
     }
 
     a p {
-        color: var(--c-bg-text);
+        color: var(--skin-text);
     }
 
     a:hover article,

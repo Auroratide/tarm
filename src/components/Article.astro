@@ -1,0 +1,20 @@
+<article>
+    <slot></slot>
+</article>
+
+<style>
+    article :global(p) {
+        line-height: 1.5;
+        margin-bottom: var(--sp-st-s);
+    }
+
+    article :global(ul),
+    article :global(ol) {
+        padding-left: clamp(var(--sp-st-s), 2.667vw, var(--sp-st-ge));
+    }
+
+    article :global(li) {
+        line-height: 1.5;
+        margin-bottom: var(--sp-st-o);
+    }
+</style>
