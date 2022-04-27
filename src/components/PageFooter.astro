@@ -1,22 +1,17 @@
 ---
 import GithubIcon from './GithubIcon.astro'
-const currentYear = new Date().getFullYear()
 ---
 
 <footer>
-    <small class="license">&copy; {currentYear} <a href="https://auroratide.com">Auroratide</a>, All Rights Reserved</small>
-    <small class="source"><a href="https://github.com/Auroratide/tarm">
-        <span>Source</span>
-        <span><GithubIcon /></span>
-    </a></small>
+    <small class="license">Made by <a href="https://auroratide.com">Auroratide</a></small>
+    <small class="source"><a href="https://github.com/Auroratide/tarm" aria-label="Source code"><GithubIcon /></a></small>
 </footer>
 
 <style>
     footer {
         display: flex;
         align-items: space-between;
-        border-top: var(--sp-st-h) solid var(--c-neutral);
-        padding: var(--sp-st-o) 0;
+        padding: var(--sp-st-cd) 0 var(--sp-st-o);
         line-height: 1;
     }
 
@@ -25,10 +20,7 @@ const currentYear = new Date().getFullYear()
     }
 
     .source a {
-        display: flex;
-    }
-
-    .source a span {
-        margin: 0 var(--sp-st-he);
+        font-size: var(--font-sz-uranus);
+        color: var(--skin-text);
     }
 </style>
