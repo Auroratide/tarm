@@ -3,6 +3,7 @@ import '../design/index.css'
 import Container from '../components/Container.astro'
 import PageHeader from '../components/PageHeader.astro'
 import PageFooter from '../components/PageFooter.astro'
+import PixelSnow from '../components/PixelSnow.astro'
 
 const {
     title,
@@ -33,6 +34,7 @@ const base = dev ? '/' : '/tarm/'
         <script is:inline src="//unpkg.com/@ungap/custom-elements/es.js"></script>
     </head>
     <body>
+        <PixelSnow />
         <Container>
             <PageHeader />
             <main><slot></slot></main>
