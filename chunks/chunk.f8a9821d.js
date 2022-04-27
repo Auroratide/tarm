@@ -1,0 +1,1 @@
+const n=document.getElementById("pixel-snow"),o=e=>()=>{const t=window.scrollY/(document.documentElement.scrollHeight-document.documentElement.clientHeight);e.style.top=`-${50*t}vh`};document.addEventListener("scroll",o(n));
