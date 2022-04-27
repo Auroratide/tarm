@@ -117,7 +117,7 @@ pre code {
     display: block;
     border: var(--sp-st-h) solid var(--skin-primary);
     padding: var(--sp-st-o);
-    box-shadow: 0 var(--sp-st-h) var(--sp-st-be) var(--c-shade) inset;
+    box-shadow: 0 var(--sp-st-h) var(--sp-st-be) hsla(0, 0%, 0%, 0.25) inset;
     background: var(--skin-highlight);
 }
 

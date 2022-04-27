@@ -17,21 +17,3 @@ const theme = themes[content.topic]
         <slot></slot>
     </Article>
 </Page>
-
-<style>
-    .resource-info {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        font-size: var(--font-sz-venus);
-        padding-left: var(--sp-st-s);
-        border-left: var(--sp-st-be) solid var(--c-neutral);
-    }
-
-    .resource-info dt {
-        font-weight: bold;
-    }
-
-    .resource-info dt::after {
-        content: ':';
-    }
-</style>
