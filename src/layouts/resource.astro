@@ -3,13 +3,15 @@ import Page from './page.astro'
 import ResourceBanner from '../components/ResourceBanner.astro'
 import Article from '../components/Article.astro'
 import authors from '../authors.json'
+import { themes } from '../theme'
 
 const { content } = Astro.props
 
 const author = authors[content.author]
+const theme = themes[content.topic]
 ---
 
-<Page title={content.title}>
+<Page title={content.title} theme={theme}>
     <Article>
         <ResourceBanner title={content.title} author={author} resourceUrl={content.resourceUrl} />
         <slot></slot>

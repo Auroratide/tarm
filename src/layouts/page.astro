@@ -4,9 +4,11 @@ import Container from '../components/Container.astro'
 import PageHeader from '../components/PageHeader.astro'
 import PageFooter from '../components/PageFooter.astro'
 import PixelSnow from '../components/PixelSnow.astro'
+import { themeClass } from '../theme'
 
 const {
     title,
+    theme,
 } = Astro.props
 
 const dev = process.env.NODE_ENV === 'dev'
@@ -33,7 +35,7 @@ const base = dev ? '/' : '/tarm/'
         <title>{title} - The Archive of Random Material</title>
         <script is:inline src="//unpkg.com/@ungap/custom-elements/es.js"></script>
     </head>
-    <body>
+    <body class={themeClass(theme)}>
         <PixelSnow />
         <Container>
             <PageHeader />

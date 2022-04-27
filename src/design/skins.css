@@ -48,7 +48,6 @@
         --skin-logo-03: var(--c-autumnred-d);
         --skin-logo-13: var(--c-auroragreen-d);
         --skin-logo-33: var(--c-livianyellow-d);
-    
 
         --skin-code-default: #A9B7C6;
         --skin-code-comment: #629755;
@@ -57,5 +56,166 @@
         --skin-code-name: #FFC66D;
         --skin-code-string:  #6A8759;
         --skin-code-annotation:  #9876AA;
+    }
+}
+
+.theme-aellagreen {
+    --skin-primary: var(--c-aellagreen-l);
+    --skin-primary-text: var(--c-aellagreen-d);
+
+    --skin-logo-00: var(--c-aellagreen-l);
+    --skin-logo-10: var(--c-aellagreen-d);
+    --skin-logo-30: var(--c-aellagreen-l);
+    --skin-logo-11: var(--c-aellagreen-d);
+    --skin-logo-21: var(--c-aellagreen-l);
+    --skin-logo-22: var(--c-aellagreen-d);
+    --skin-logo-32: var(--c-aellagreen-l);
+    --skin-logo-03: var(--c-aellagreen-d);
+    --skin-logo-13: var(--c-aellagreen-l);
+    --skin-logo-33: var(--c-aellagreen-d);
+}
+
+@media (prefers-color-scheme: dark) {
+    .theme-aellagreen {
+        --skin-primary: var(--c-aellagreen-d);
+        --skin-primary-text: var(--c-aellagreen-l);
+    }
+}
+
+.theme-autumnorange {
+    --skin-primary: var(--c-autumnorange-l);
+    --skin-primary-text: var(--c-autumnorange-d);
+
+    --skin-logo-00: var(--c-autumnorange-l);
+    --skin-logo-10: var(--c-autumnorange-d);
+    --skin-logo-30: var(--c-autumnorange-l);
+    --skin-logo-11: var(--c-autumnorange-d);
+    --skin-logo-21: var(--c-autumnorange-l);
+    --skin-logo-22: var(--c-autumnorange-d);
+    --skin-logo-32: var(--c-autumnorange-l);
+    --skin-logo-03: var(--c-autumnorange-d);
+    --skin-logo-13: var(--c-autumnorange-l);
+    --skin-logo-33: var(--c-autumnorange-d);
+}
+
+@media (prefers-color-scheme: dark) {
+    .theme-autumnorange {
+        --skin-primary: var(--c-autumnorange-d);
+        --skin-primary-text: var(--c-autumnorange-l);
+    }
+}
+
+.theme-aurorablue {
+    --skin-primary: var(--c-aurorablue-l);
+    --skin-primary-text: var(--c-aurorablue-d);
+
+    --skin-logo-00: var(--c-aurorablue-l);
+    --skin-logo-10: var(--c-aurorablue-d);
+    --skin-logo-30: var(--c-aurorablue-l);
+    --skin-logo-11: var(--c-aurorablue-d);
+    --skin-logo-21: var(--c-aurorablue-l);
+    --skin-logo-22: var(--c-aurorablue-d);
+    --skin-logo-32: var(--c-aurorablue-l);
+    --skin-logo-03: var(--c-aurorablue-d);
+    --skin-logo-13: var(--c-aurorablue-l);
+    --skin-logo-33: var(--c-aurorablue-d);
+}
+
+@media (prefers-color-scheme: dark) {
+    .theme-aurorablue {
+        --skin-primary: var(--c-aurorablue-d);
+        --skin-primary-text: var(--c-aurorablue-l);
+    }
+}
+
+.theme-fablepink {
+    --skin-primary: var(--c-fablepink-l);
+    --skin-primary-text: var(--c-fablepink-d);
+
+    --skin-logo-00: var(--c-fablepink-l);
+    --skin-logo-10: var(--c-fablepink-d);
+    --skin-logo-30: var(--c-fablepink-l);
+    --skin-logo-11: var(--c-fablepink-d);
+    --skin-logo-21: var(--c-fablepink-l);
+    --skin-logo-22: var(--c-fablepink-d);
+    --skin-logo-32: var(--c-fablepink-l);
+    --skin-logo-03: var(--c-fablepink-d);
+    --skin-logo-13: var(--c-fablepink-l);
+    --skin-logo-33: var(--c-fablepink-d);
+}
+
+@media (prefers-color-scheme: dark) {
+    .theme-fablepink {
+        --skin-primary: var(--c-fablepink-d);
+        --skin-primary-text: var(--c-fablepink-l);
+    }
+}
+
+.theme-autumnred {
+    --skin-primary: var(--c-autumnred-l);
+    --skin-primary-text: var(--c-autumnred-d);
+
+    --skin-logo-00: var(--c-autumnred-l);
+    --skin-logo-10: var(--c-autumnred-d);
+    --skin-logo-30: var(--c-autumnred-l);
+    --skin-logo-11: var(--c-autumnred-d);
+    --skin-logo-21: var(--c-autumnred-l);
+    --skin-logo-22: var(--c-autumnred-d);
+    --skin-logo-32: var(--c-autumnred-l);
+    --skin-logo-03: var(--c-autumnred-d);
+    --skin-logo-13: var(--c-autumnred-l);
+    --skin-logo-33: var(--c-autumnred-d);
+}
+
+@media (prefers-color-scheme: dark) {
+    .theme-autumnred {
+        --skin-primary: var(--c-autumnred-d);
+        --skin-primary-text: var(--c-autumnred-l);
+    }
+}
+
+.theme-auroragreen {
+    --skin-primary: var(--c-auroragreen-l);
+    --skin-primary-text: var(--c-auroragreen-d);
+
+    --skin-logo-00: var(--c-auroragreen-l);
+    --skin-logo-10: var(--c-auroragreen-d);
+    --skin-logo-30: var(--c-auroragreen-l);
+    --skin-logo-11: var(--c-auroragreen-d);
+    --skin-logo-21: var(--c-auroragreen-l);
+    --skin-logo-22: var(--c-auroragreen-d);
+    --skin-logo-32: var(--c-auroragreen-l);
+    --skin-logo-03: var(--c-auroragreen-d);
+    --skin-logo-13: var(--c-auroragreen-l);
+    --skin-logo-33: var(--c-auroragreen-d);
+}
+
+@media (prefers-color-scheme: dark) {
+    .theme-auroragreen {
+        --skin-primary: var(--c-auroragreen-d);
+        --skin-primary-text: var(--c-auroragreen-l);
+    }
+}
+
+.theme-livianyellow {
+    --skin-primary: var(--c-livianyellow-l);
+    --skin-primary-text: var(--c-livianyellow-d);
+
+    --skin-logo-00: var(--c-livianyellow-l);
+    --skin-logo-10: var(--c-livianyellow-d);
+    --skin-logo-30: var(--c-livianyellow-l);
+    --skin-logo-11: var(--c-livianyellow-d);
+    --skin-logo-21: var(--c-livianyellow-l);
+    --skin-logo-22: var(--c-livianyellow-d);
+    --skin-logo-32: var(--c-livianyellow-l);
+    --skin-logo-03: var(--c-livianyellow-d);
+    --skin-logo-13: var(--c-livianyellow-l);
+    --skin-logo-33: var(--c-livianyellow-d);
+}
+
+@media (prefers-color-scheme: dark) {
+    .theme-livianyellow {
+        --skin-primary: var(--c-livianyellow-d);
+        --skin-primary-text: var(--c-livianyellow-l);
     }
 }
