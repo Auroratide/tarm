@@ -53,11 +53,11 @@ a.button::after {
     top: 0;
     right: 0;
     content: '';
-    background-color: var(--c-aurorablue-d);
+    background-color: var(--skin-primary-text);
     box-shadow:
-        var(--btn-pixel) var(--btn-pixel) var(--c-aurorablue-d),
-        0em calc(2 * var(--btn-pixel)) var(--c-aurorablue-d),
-        0em var(--btn-pixel) var(--c-aurorablue-l);
+        var(--btn-pixel) var(--btn-pixel) var(--skin-primary-text),
+        0em calc(2 * var(--btn-pixel)) var(--skin-primary-text),
+        0em var(--btn-pixel) var(--skin-primary);
     transition: right 0.1s ease-in-out;
 }
 
@@ -95,6 +95,8 @@ input[type="text"] {
     border: var(--sp-st-h) solid var(--skin-body);
     border-bottom-width: var(--sp-st-be);
     padding: var(--sp-st-he) var(--sp-st-be);
+    background: var(--skin-content);
+    color: var(--skin-text);
 }
 
 input[type="text"]:focus {
@@ -144,7 +146,7 @@ code .attr-value {
 code .class-name,
 code .selector,
 code .tag > .tag {
-    color: var(--c-code-name);
+    color: var(--skin-code-name);
 }
 
 code .function,

@@ -1,4 +1,13 @@
 :root {
+    --c-greyscale-100: hsl(240, 0%, 100%);
+    --c-greyscale-095: hsl(240, 0%, 96%);
+    --c-greyscale-090: hsl(240, 0%, 91%);
+    --c-greyscale-080: hsl(240, 0%, 87%);
+    --c-greyscale-070: hsl(240, 0%, 78%);
+    --c-greyscale-020: hsl(240, 2%, 21%);
+    --c-greyscale-010: hsl(240, 2%, 13%);
+    --c-greyscale-005: hsl(240, 2%, 6%);
+
     --c-grey: hsl(0, 0%, 87%);
     --c-offwhite: hsl(240, 0%, 96%);
     --c-white: hsl(240, 0%, 100%);

@@ -1,13 +1,12 @@
 :root {
-    --skin-highlight: var(--c-white);
-    --skin-body: var(--c-grey);
-    --skin-content: var(--c-offwhite);
-    --skin-text: var(--c-offblack);
+    --skin-highlight: var(--c-greyscale-100);
+    --skin-body: var(--c-greyscale-080);
+    --skin-content: var(--c-greyscale-095);
+    --skin-text: var(--c-greyscale-010);
 
     --skin-primary: var(--c-aurorablue-l);
     --skin-primary-text: var(--c-aurorablue-d);
     --skin-visited: var(--c-fablelavender-d);
-    --skin-visited-hover: var(--c-fablelavender-l);
 
     --skin-logo-00: var(--c-eventideblack-d);
     --skin-logo-10: var(--c-wintergrey-l);
@@ -26,4 +25,37 @@
     --skin-code-name: #0080aa;
     --skin-code-string:  #a31515;
     --skin-code-annotation:  #808000;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --skin-highlight: var(--c-greyscale-005);
+        --skin-body: var(--c-greyscale-005);
+        --skin-content: var(--c-greyscale-010);
+        --skin-text: var(--c-greyscale-070);
+    
+        --skin-primary: var(--c-aurorablue-d);
+        --skin-primary-text: var(--c-aurorablue-l);
+        --skin-visited: var(--c-fablelavender-l);
+    
+        --skin-logo-00: var(--c-eventideblack-l);
+        --skin-logo-10: var(--c-wintergrey-d);
+        --skin-logo-30: var(--c-aellagreen-d);
+        --skin-logo-11: var(--c-autumnorange-d);
+        --skin-logo-21: var(--c-aurorablue-d);
+        --skin-logo-22: var(--c-fablepink-d);
+        --skin-logo-32: var(--c-fablelavender-d);
+        --skin-logo-03: var(--c-autumnred-d);
+        --skin-logo-13: var(--c-auroragreen-d);
+        --skin-logo-33: var(--c-livianyellow-d);
+    
+
+        --skin-code-default: #A9B7C6;
+        --skin-code-comment: #629755;
+        --skin-code-keyword: #CC7832;
+        --skin-code-literal: #6897BB;
+        --skin-code-name: #FFC66D;
+        --skin-code-string:  #6A8759;
+        --skin-code-annotation:  #9876AA;
+    }
 }
