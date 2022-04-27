@@ -31,7 +31,8 @@ const base = dev ? '/' : '/tarm/'
         <link rel="icon" href="favicon.png" />
 
         <title>{title} - The Archive of Random Material</title>
-        <script is:inline src="//unpkg.com/@ungap/custom-elements/es.js"></script>
+        <script is:inline src="https://unpkg.com/@ungap/custom-elements/es.js"></script>
+        <slot name="scripts"></slot>
     </head>
     <body class={themeClass(theme)}>
         <PixelSnow />
