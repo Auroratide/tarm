@@ -1,4 +1,5 @@
 ---
+import { extractOpengraph } from '../opengraph'
 import CoverImage from './CoverImage.astro'
 
 const {
@@ -6,13 +7,15 @@ const {
     author,
     resourceUrl,
 } = Astro.props
+
+const opengraph = await extractOpengraph(resourceUrl)
 ---
 
 <header>
     <h1 class="title">{title}</h1>
     <address class="author">By <a rel="author" href={author.link}>{author.name}</a></address>
     <span class="resource"><a class="button" href={resourceUrl}>See original</a></span>
-    <div class="cover"><CoverImage /></div>
+    <div class="cover"><CoverImage src={opengraph.image.url.href} width={opengraph.image.width} height={opengraph.image.height} /></div>
 </header>
 
 <style>

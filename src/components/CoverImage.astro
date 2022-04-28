@@ -1,4 +1,8 @@
-<div>
+---
+const { src, width, height } = Astro.props
+---
+
+<div class="cover-image">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
         <rect x="28" y="0" width="72" height="72" />
         <rect x="2" y="0" width="21" height="21" />
@@ -13,10 +17,45 @@
         <rect x="58" y="80" width="20" height="20" />
         <rect x="85" y="77" width="15" height="15" />
     </svg>
+    {src !== undefined && (
+        <div class="image-window">
+            <img src={src} width={width} height={height} alt="" />
+        </div>
+    )}
 </div>
 
 <style>
+    .cover-image {
+        position: relative;
+    }
+
+    svg {
+        display: block;
+    }
+
     svg rect {
         fill: var(--skin-primary);
+    }
+
+    .image-window {
+        position: absolute;
+        top: var(--sp-st-be);
+        right: var(--sp-st-be);
+        overflow: hidden;
+        width: 72%;
+        height: 72%;
+        aspect-ratio: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 var(--sp-st-be) hsla(0, 0%, 0%, 0.5);
+        background-color: var(--skin-primary-text);
+    }
+
+    img {
+        display: block;
+        max-width: 250%;
+        max-height: 250%;
+        object-fit: cover;
     }
 </style>
