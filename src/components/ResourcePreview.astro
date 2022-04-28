@@ -29,7 +29,12 @@ const theme = themes[resource.frontmatter.topic]
     article {
         position: relative;
         padding: 0 0 0 calc(var(--sp-st-s) + var(--sp-st-be));
-        margin-bottom: var(--sp-st-cd);
+        margin-bottom: var(--sp-st-ge);
+    }
+
+    article > * {
+        position: relative;
+        z-index: 3;
     }
 
     article::before {
@@ -42,6 +47,20 @@ const theme = themes[resource.frontmatter.topic]
         top: var(--sp-st-h);
         left: 0;
         transition: height 0.15s ease-in-out;
+        z-index: 2;
+    }
+
+    article::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: var(--sp-st-h);
+        right: 0;
+        bottom: calc(-1 * var(--sp-st-h));
+        left: 0;
+        background-color: var(--skin-primary);
+        z-index: 1;
+        opacity: 0.05;
     }
 
     article h2 {
