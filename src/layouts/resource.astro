@@ -12,6 +12,7 @@ const theme = themes[content.topic]
 ---
 
 <Page title={content.title} theme={theme}>
+    <script slot="scripts" defer src="https://unpkg.com/@auroratide/img-popout/dist/index.js"></script>
     <Article>
         <ResourceBanner title={content.title} author={author} resourceUrl={content.resourceUrl} />
         <slot></slot>
