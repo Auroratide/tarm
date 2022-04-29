@@ -12,12 +12,12 @@
 
         <link rel="icon" href="favicon.png">
 
-        <title>Worldbuilding Table of Elements - The Archive of Random Material</title>
+        <title>Why React Context is Not a &quot;State Management&quot; Tool - The Archive of Random Material</title>
         <script src="https://unpkg.com/@ungap/custom-elements/es.js"></script>
         <script defer src="https://unpkg.com/@auroratide/img-popout/dist/index.js"></script>
-    <link rel="stylesheet" href="/tarm/assets/asset.11e1c2f3.css"></link><script type="module" src="/tarm/entry.d56ac3ff7.js" astro-script="/resources/worldbuilding-table-of-elements/script-0"></script>
+    <link rel="stylesheet" href="/tarm/assets/asset.11e1c2f3.css"></link><script type="module" src="/tarm/entry.d56ac3ff2.js" astro-script="/resources/why-react-context-is-not-a-state-management-tool/script-0"></script>
 </head>
-    <body class="theme-fablepink">
+    <body class="theme-aurorablue">
         
 
 <div id="pixel-snow" class="pixel-snow astro-I3JCUIYE" aria-hidden="true">
@@ -60,9 +60,9 @@
 
 <main><article class="astro-CPQEDVAG">
     <header class="astro-UZUBREVQ">
-    <h1 class="title astro-UZUBREVQ">Worldbuilding Table of Elements</h1>
-    <address class="author astro-UZUBREVQ">By <a rel="author" href="https://www.reddit.com/user/OtherAtlas/" class="astro-UZUBREVQ">u/OtherAtlas</a></address>
-    <span class="resource astro-UZUBREVQ"><a class="button astro-UZUBREVQ" href="https://www.reddit.com/r/worldbuilding/comments/u55hfb/worldbuilding_table_of_elements/">See original</a></span>
+    <h1 class="title astro-UZUBREVQ">Why React Context is Not a &quot;State Management&quot; Tool</h1>
+    <address class="author astro-UZUBREVQ">By <a rel="author" href="https://blog.isquaredsoftware.com/" class="astro-UZUBREVQ">Mark Erikson</a></address>
+    <span class="resource astro-UZUBREVQ"><a class="button astro-UZUBREVQ" href="https://blog.isquaredsoftware.com/2021/01/context-redux-differences/">See original</a></span>
     <div class="cover astro-UZUBREVQ"><div class="cover-image astro-NYUPLONC" aria-hidden="true">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="astro-NYUPLONC">
         <rect x="28" y="0" width="72" height="72" class="astro-NYUPLONC"></rect>
@@ -79,21 +79,20 @@
         <rect x="85" y="77" width="15" height="15" class="astro-NYUPLONC"></rect>
     </svg>
     <img-popout class="image-window astro-NYUPLONC">
-            <img src="https://preview.redd.it/pdv1d6qd1yt81.png?auto=webp&#38;s=ad8045402c1b72808d9cb1c23f27399ba614d856" width="3444" height="2523" alt="" class="astro-NYUPLONC">
+            <img src="https://blog.isquaredsoftware.com/images/logo.png" alt="" class="astro-NYUPLONC">
         </img-popout>
 </div>
 
 </div>
 </header>
 
-<p>Worldbuilding is complicated because worlds are complicated. It is often to name every facet of our world. Perhaps we can think of high-level ideas like environment, people, culture, architecture, government, and so on. But those break down further into finer categories, and there may be essential categories we just miss because we take for granted.</p><p>Worldbuilding is actually <em>harder</em> because its facets are a superset of our world’s; in a fictional world, you can have things like magic, for example.</p><p>This Worldbuilding Table of Elements does a great job listing at least 118 facets to consider. Some of the elements I found illuminating were:</p><ul>
-<li>Taboos</li>
-<li>Heraldy</li>
-<li>Lies &#x26; Propaganda</li>
-<li>Disease</li>
-<li>Slang &#x26; Curses</li>
-<li>Deathcare</li>
-</ul>
+<p>When React its Context API and Hooks, a lot of buzz spawned regarding whether their combination made Redux obsolete. The answer is “not really, it just depends on what you need.”</p><h2 id="context-vs-redux">Context vs Redux</h2><p><strong>Context</strong> is a way to avoid prop-drilling. It acts as a <q>wormhole</q>, portalling a value down the component tree without having to specify it as a prop in each intermediate component.</p><p><strong>Redux</strong> is a global state management tool that uses “actions” as the sole way of updating state. Components can subscribe to parts of the state in order to know when to rerender.</p><p>The key difference here is that Context is <em>not</em> a state management tool. All it does is provide values to components; state is managed with hooks instead. In fact, Redux <em>uses</em> Context to avoid prop-drilling itself.</p><p>The comparison of the two tools only makes sense if we think of Context <em>in combination with</em> the <code>useReducer</code> hook.</p><h2 id="context--usereducer-vs-redux">Context + useReducer vs Redux</h2><p>Like Redux, <code>useReducer</code> also uses “actions” as the sole way of updating its state. When used with Context, it starts to look a lot like Redux, but there are still some differences:</p><ul>
+<li>The value passed down via Context from <code>useReducer</code> is the entire state. This means <em>every</em> component that uses that state (even if it is a tiny subset) will rerender if the state changes at all. Redux, on the other hand, allows subscribing to subsets of the state.</li>
+<li>Redux is independent of React, meaning it can be used with any UI framework. Context + <code>useReducer</code>, on the other hand, is React-specific. Redux may be essential in an ecosystem where multiple frameworks are used, or React is only used in a subset of the app.</li>
+<li>Redux offers an ecosystem of tools for tracing and replaying actions for debugging and handling side-effects like API calls.</li>
+</ul><p>So while the action-based paradigm is the same, Redux can be thought of as having a bit more firepower in order to handle either larger/more complicated state or provide opportunity for observability.</p><h2 id="when-to-use-context-or-redux">When to use Context or Redux?</h2><p>Here is the author’s opinion:</p><blockquote>
+<p>My personal opinion is that if you get past 2-3 state-related contexts in an application, you’re re-inventing a weaker version of React-Redux and should just switch to using Redux.</p>
+</blockquote><p>In other words, when state becomes large enough, it’s better to use Redux.</p><p>In my own opinion, it depends on what constitutes “global state” and whether it makes sense to keep the state in the same management model. In other words, I’d first question what state on a project is truly global, and then whether it is desired to put otherwise disparate kinds of state under the umbrella of a Redux store.</p><p>In any case, for small React applications or components, Context + <code>useReducer</code> works fine. Context + <code>useState</code> might be even simpler.</p>
 </article>
 
 </main><footer class="astro-MYFJOM3Y">
