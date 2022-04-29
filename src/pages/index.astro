@@ -1,12 +1,12 @@
 ---
 import type { ResourceInfo } from '../resources'
-import { withDates, byPublishDate } from '../resources'
+import { withDates, byAddedDate } from '../resources'
 import Page from '../layouts/page.astro'
 import ResourcePreview from '../components/ResourcePreview.astro'
 
 const resources = (await Astro.glob<ResourceInfo<string>>('./resources/*.md'))
 	.map(withDates)
-	.sort(byPublishDate)
+	.sort(byAddedDate)
 ---
 
 <Page title="Resources">

@@ -28,3 +28,6 @@ export const withDates = (it: ResourceInstance): Resource => ({
 
 export const byPublishDate = (l: Resource, r: Resource) =>
     r.frontmatter.publishedAt.getTime() - l.frontmatter.publishedAt.getTime()
+
+export const byAddedDate = (l: Resource, r: Resource) =>
+    r.frontmatter.addedAt.getTime() - l.frontmatter.addedAt.getTime()
