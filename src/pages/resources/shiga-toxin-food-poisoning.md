@@ -2,6 +2,7 @@
 layout: ../../layouts/resource.astro
 title: Shiga Toxin Food Poisoning
 author: chubbyemu
+type: video
 resourceUrl: https://www.youtube.com/watch?v=YDaTuW6DYeQ
 publishedAt: 2022-05-02
 addedAt: 2022-05-02

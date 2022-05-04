@@ -2,6 +2,7 @@
 layout: ../../layouts/resource.astro
 title: Why React Context is Not a "State Management" Tool
 author: mark-erikson
+type: article
 resourceUrl: https://blog.isquaredsoftware.com/2021/01/context-redux-differences/
 publishedAt: 2021-01-18
 addedAt: 2022-04-29

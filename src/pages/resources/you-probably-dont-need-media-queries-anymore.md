@@ -2,6 +2,7 @@
 layout: ../../layouts/resource.astro
 title: You Probably Don't Need Media Queries Anymore
 author: kathryn-grayson-nanz
+type: article
 resourceUrl: https://dev.to/kathryngrayson/you-probably-dont-need-media-queries-anymore-a4j
 publishedAt: 2021-10-29
 addedAt: 2022-04-08

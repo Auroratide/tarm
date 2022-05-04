@@ -2,6 +2,7 @@
 layout: ../../layouts/resource.astro
 title: Pixelart and the image-rendering Paradox
 author: timothy-foster
+type: article
 resourceUrl: https://auroratide.com/posts/pixelart-and-the-image-rendering-paradox
 publishedAt: 2021-08-07
 addedAt: 2022-04-08
