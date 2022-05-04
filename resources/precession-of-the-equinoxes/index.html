@@ -12,12 +12,12 @@
 
         <link rel="icon" href="favicon.png">
 
-        <title>Pixelart and the image-rendering Paradox - The Archive of Random Material</title>
+        <title>Precession of the Equinoxes - The Archive of Random Material</title>
         <script src="https://unpkg.com/@ungap/custom-elements/es.js"></script>
         <script defer src="https://unpkg.com/@auroratide/img-popout/dist/index.js"></script>
-    <link rel="stylesheet" href="/tarm/assets/asset.4249438d.css"></link><script type="module" src="/tarm/entry.d56ac3ff6.js" astro-script="/resources/pixelart-and-the-image-rendering-paradox/script-0"></script>
+    <link rel="stylesheet" href="/tarm/assets/asset.4249438d.css"></link><script type="module" src="/tarm/entry.d56ac3ff8.js" astro-script="/resources/precession-of-the-equinoxes/script-0"></script>
 </head>
-    <body class="theme-aurorablue">
+    <body class="theme-auroragreen">
         
 
 <div id="pixel-snow" class="pixel-snow astro-I3JCUIYE" aria-hidden="true">
@@ -60,9 +60,9 @@
 
 <main><article class="astro-GH5BZF4G">
     <header class="astro-MKASNDVW">
-    <h1 class="title astro-MKASNDVW">Pixelart and the image-rendering Paradox</h1>
-    <address class="author astro-MKASNDVW">By <a rel="author" href="https://auroratide.com/" class="astro-MKASNDVW">Timothy Foster</a></address>
-    <span class="resource astro-MKASNDVW"><a class="button astro-MKASNDVW" href="https://auroratide.com/posts/pixelart-and-the-image-rendering-paradox">Read original article</a></span>
+    <h1 class="title astro-MKASNDVW">Precession of the Equinoxes</h1>
+    <address class="author astro-MKASNDVW">By <a rel="author" href="https://www.youtube.com/channel/UCYNbYGl89UUowy8oXkipC-Q" class="astro-MKASNDVW">Dr. Becky Smethurst</a></address>
+    <span class="resource astro-MKASNDVW"><a class="button astro-MKASNDVW" href="https://www.youtube.com/watch?v=2JJjNc1xPKw">Watch original video</a></span>
     <div class="cover astro-MKASNDVW"><div class="cover-image astro-NYUPLONC" aria-hidden="true">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="astro-NYUPLONC">
         <rect x="28" y="0" width="72" height="72" class="astro-NYUPLONC"></rect>
@@ -79,17 +79,26 @@
         <rect x="85" y="77" width="15" height="15" class="astro-NYUPLONC"></rect>
     </svg>
     <img-popout class="image-window astro-NYUPLONC">
-            <img src="https://auroratide.com/favicon/0512.png" alt="" class="astro-NYUPLONC">
+            <img src="https://i.ytimg.com/vi/2JJjNc1xPKw/maxresdefault.jpg" width="1280" height="720" alt="" class="astro-NYUPLONC">
         </img-popout>
 </div>
 
 </div>
 </header>
 
-<p>By default, upscaling a tiny image on a browser makes it blurry. This is devastating for pixelart.</p><p>CSS provides a property called <code>image-rendering</code> which effectively determines what algorithm is used to upscale an image. In the case of pixelart, we want the Nearest Neighbor algorithm, as it preserves the pixely nature of the image.</p><p>The problem? At least as of the time of the article’s writing, Chrome and Firefox supported the <code>pixelated</code> and <code>crisp-edges</code> values respective, but not the other. So, which do you use?</p><p>To maximize support, use:</p><pre class="language-css"><code class="language-css"><span class="token selector">.pixelart</span> <span class="token punctuation">{</span>
-    <span class="token property">image-rendering</span><span class="token punctuation">:</span> crisp-edges<span class="token punctuation">;</span>
-    <span class="token property">image-rendering</span><span class="token punctuation">:</span> pixelated<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre><p>The article goes into why (semantics) and the history behind this paradox.</p>
+<p>Currently, <a href="https://en.wikipedia.org/wiki/Polaris">Polaris</a> is the “North Star”, which basically means if you walk toward it then you will be heading north. Because the Earth rotates, no other star has this property, as where they are in the sky depends on the time of day. Polaris is special because the Earth’s axis of rotation conveniently points nearly directly at this star in the sky.</p><p>That won’t always be the case; Earth’s axis of rotation <em>itself</em> rotates, or more accurately, <strong><a href="https://en.wikipedia.org/wiki/Precession">precesses</a></strong>. The best illustration of this is to imagine a spinning top: as the top spins, where it points also seems to rotate.</p><figure>
+    <img src="https://c.tenor.com/7b9pf_7MDWQAAAAC/action-drama.gif" alt="As a top spins down, its tip changes direction in a well-defined circle.">
+    <figcaption>A spinning top demonstrates the effect of precession. From <a href="https://tenor.com/view/action-drama-sci-fi-inception-top-gif-3309861">Tenor</a>.</figcaption>
+</figure><p>This is called <strong><a href="https://en.wikipedia.org/wiki/Axial_precession">Axial Precession</a></strong>, or the Precession of the Equinoxes.</p><h2 id="why-the-earth-precesses">Why the Earth Precesses</h2><p>The Earth’s precession is caused by an unequal tug of gravity by the Sun. Because the Earth is spinning, it actually isn’t a perfect sphere; instead, it bulges out at the equator.</p><p>This means one part of the bulge is closer to the Sun than the other. The Sun pulls on the closer bulge more strongly, resulting in a net force tugging on the Earth’s axis of rotation.</p><h2 id="the-effects-of-precession">The Effects of Precession</h2><p>As the Earth precesses, where the axis points in the night sky changes over time, which has a number of interesting consequences:</p><ul>
+<li>In just a couple thousand years, Polaris will no longer be the northiest North Star. It will gradually drift away from the northern position until other stars become closer to true north.</li>
+<li>Constellations will drift from when and where they currently show up. Some constellations that are exclusive to the southern hemisphere might start peeking into the northern hemisphere thousands of years from now.</li>
+<li>When summer and winter happen during the year will flip flop. Since seasons are determined by Earth’s axial tilt, if the tilt changes its orientation, then so will the seasons change their timing.
+<ul>
+<li>Halfway through the precession cycle, summer in the north will happen in January instead of June.</li>
+<li>Although, our modern calendars actually take this drift into account, so people 13,000 years from now will still have summer in June.</li>
+</ul>
+</li>
+</ul><p>And by the way, the precession won’t cause any catastrophes! In fact, the Earth completes a cycle of precession every 26,000 years, and hence has gone through many thousands of these cycles throughout its history.</p>
 </article>
 
 </main><footer class="astro-MYFJOM3Y">
