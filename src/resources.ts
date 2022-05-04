@@ -1,8 +1,11 @@
 import type { MarkdownInstance } from 'astro'
 
+export type ResourceType = 'article' | 'video' | 'image'
+
 export type ResourceInfo<DateType> = {
     title: string,
     author: string,
+    type: ResourceType,
     resourceUrl: string,
     publishedAt: DateType,
     addedAt: DateType,
