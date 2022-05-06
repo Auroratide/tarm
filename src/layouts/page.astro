@@ -4,6 +4,7 @@ import Container from '../components/Container.astro'
 import PageHeader from '../components/PageHeader.astro'
 import PageFooter from '../components/PageFooter.astro'
 import PixelSnow from '../components/PixelSnow.astro'
+import OpenGraph from '../components/OpenGraph.astro'
 import { themeClass } from '../theme'
 
 const {
@@ -31,6 +32,11 @@ const base = dev ? '/' : '/tarm/'
         <link rel="icon" href="favicon.png" />
 
         <title>{title} - The Archive of Random Material</title>
+
+        <slot name="opengraph">
+            <OpenGraph />
+        </slot>
+
         <script is:inline src="https://unpkg.com/@ungap/custom-elements/es.js"></script>
         <slot name="scripts"></slot>
     </head>
