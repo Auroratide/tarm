@@ -12,12 +12,12 @@
 
         <link rel="icon" href="favicon.png">
 
-        <title>Image Alt Text, the Way the Spec Intended It - The Archive of Random Material</title>
+        <title>Pixel Art Animation. Reinvented. - The Archive of Random Material</title>
         <script src="https://unpkg.com/@ungap/custom-elements/es.js"></script>
         <script defer src="https://unpkg.com/@auroratide/img-popout/dist/index.js"></script>
-    <link rel="stylesheet" href="/tarm/assets/asset.e0e5dd4c.css"></link><script type="module" src="/tarm/entry.d56ac3ff5.js" astro-script="/resources/image-alt-text-the-way-the-spec-intended-it/script-0"></script>
+    <link rel="stylesheet" href="/tarm/assets/asset.e0e5dd4c.css"></link><script type="module" src="/tarm/entry.d56ac3ff8.js" astro-script="/resources/pixel-art-animation-reinvented/script-0"></script>
 </head>
-    <body class="theme-aurorablue">
+    <body class="theme-livianyellow">
         
 
 <div id="pixel-snow" class="pixel-snow astro-I3JCUIYE" aria-hidden="true">
@@ -60,9 +60,9 @@
 
 <main><article class="astro-2TUBAFR7">
     <header class="astro-MKASNDVW">
-    <h1 class="title astro-MKASNDVW">Image Alt Text, the Way the Spec Intended It</h1>
-    <address class="author astro-MKASNDVW">By <a rel="author" href="https://auroratide.com/" class="astro-MKASNDVW">Timothy Foster</a></address>
-    <span class="resource astro-MKASNDVW"><a class="button astro-MKASNDVW" href="https://auroratide.com/posts/image-alt-text">Read original article</a></span>
+    <h1 class="title astro-MKASNDVW">Pixel Art Animation. Reinvented.</h1>
+    <address class="author astro-MKASNDVW">By <a rel="author" href="https://www.youtube.com/channel/UCtEwVJZABCd0tels2KIpKGQ" class="astro-MKASNDVW">aarthificial</a></address>
+    <span class="resource astro-MKASNDVW"><a class="button astro-MKASNDVW" href="https://www.youtube.com/watch?v=HsOKwUwL1bE">Watch original video</a></span>
     <div class="cover astro-MKASNDVW"><div class="cover-image astro-NYUPLONC" aria-hidden="true">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="astro-NYUPLONC">
         <rect x="28" y="0" width="72" height="72" class="astro-NYUPLONC"></rect>
@@ -79,17 +79,19 @@
         <rect x="85" y="77" width="15" height="15" class="astro-NYUPLONC"></rect>
     </svg>
     <img-popout class="image-window astro-NYUPLONC">
-            <img src="https://auroratide.com/favicon/0512.png" alt="" class="astro-NYUPLONC">
+            <img src="https://i.ytimg.com/vi/HsOKwUwL1bE/maxresdefault.jpg" width="1280" height="720" alt="" class="astro-NYUPLONC">
         </img-popout>
 </div>
 
 </div>
 </header>
 
-<p>In HTML, you can give a text description to images, called the <dfn>alt text</dfn>. For the sake of accessibility (i.e. people who cannot see the image or for whom it takes a long time to download), you should _always_:</p><ul>
-<li>Provide alt text</li>
-<li>Or explicitly declare no alt text (for purely decorative images)</li>
-</ul><p>What makes for good alt text?</p><p><strong>Treat alt text as a <em>replacement</em> in the page’s context.</strong></p><p>A good way to think about it is this: if you were describing the page to somebody on the phone, what would you say when you reached the image?</p>
+<h2 id="spritesheets">Spritesheets</h2><p>When making a 2D game with characters and animations, a classic approach is to create a <dfn>spritesheet</dfn>. An animation can be thought of as a series of rapidly displayed frames each showing a snapshot of the animation. A spritesheet is a grid of such frames, and a game will reference each frame in the sheet when showing the animation.</p><p>There is a problem with this approach: What if you want <em>variations</em>? For example, let’s say a character dresses differently depending on the season. Normally, you would have to clone the <em>entire spritesheet</em> and alter it to fit the new variation.</p><p>This results in a lot of duplicated sprites. Heaven forbid you need to tweak the <em>animation itself</em> and therefore need to change every single spritesheet.</p><h2 id="uv-mapping">UV Mapping</h2><p>For his game, aarthificial uses a different approach that separates the animation from the appearance.</p><p>The animation is still a classic spritesheet. However, instead of each pixel representing to color to display, each pixel <em>actually</em> represents the coordinates of a pixel in a different image; let’s call this special image the <strong>lookup image</strong>.</p><p>A <a href="https://docs.unity3d.com/Manual/shader-introduction.html">shader</a> is used to render the lookup pixel to the view.</p><figure>
+    <img-popout>
+        <img src="resources/pixel-art-animation-reinvented/example.png" alt="The Source image shows an animation frame with oddly colored pixels. The Lookup image shows a flattened character sprite. The Result image shows the animation frame, but colored according to the sprite.">
+    </img-popout>
+    <figcaption>This approach decouples the animation of a character from her appearance.</figcaption>
+</figure><p>Now, there is only ever a single animation spritesheet. If you want different variations of the character, you only need to supply many different lookup images, each of which is drastically cheaper to make than an entire animation sheet.</p><p>In fact, this technique is not entirely novel. 3D animations, for instance, animate using “bones” and allow changes in appearance via models and meshes. aarthificial has taken that wisdom and applied it to pixelart.</p>
 </article>
 
 </main><footer class="astro-MYFJOM3Y">
