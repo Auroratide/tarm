@@ -18,9 +18,9 @@ const theme = themes[resource.frontmatter.topic]
         <p>By {author.name}</p>
         <p class="category-info">
             <span class="topic">{resource.frontmatter.topic}</span>
-            <span class="tags">{resource.frontmatter.tags.map(tag =>
+            {resource.frontmatter.tags.map(tag =>
                 <span class="tag">{tag}</span>
-            )}</span>
+            )}
         </p>
     </article>
 </a>
@@ -90,6 +90,7 @@ const theme = themes[resource.frontmatter.topic]
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+        column-gap: var(--sp-st-mg);
     }
 
     .topic {
@@ -100,20 +101,12 @@ const theme = themes[resource.frontmatter.topic]
     .topic::after {
         content: '•';
         display: inline-block;
-        margin: 0 var(--sp-st-c);
-    }
-
-    .tags {
-        font-size: var(--font-sz-venus);
+        margin-left: var(--sp-st-c);
+        margin-right: calc(-1 * var(--sp-st-c));
     }
 
     .tag {
-        display: inline-block;
-        margin: 0 var(--sp-st-c);
-    }
-
-    .tag:first-child {
-        margin-left: 0;
+        font-size: var(--font-sz-venus);
     }
 
     @media (prefers-reduced-motion) {
