@@ -4,6 +4,7 @@ export const themes = {
     'storytelling': 'fablepink',
     'health': 'autumnred',
     'astronomy': 'auroragreen',
+    'art': 'livianyellow',
 }
 
 export const themeClass = (theme) => `theme-${theme}`
