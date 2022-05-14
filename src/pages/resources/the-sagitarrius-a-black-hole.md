@@ -14,7 +14,7 @@ In 2017, the Event Horizon Telescope essentially photographed two black holes: [
 
 <figure>
     <img-popout>
-        <img src="/resources/the-sagitarrius-a-black-hole/comparison.jpg" alt="Sgr A* is a blurry orange ring with three bright spots, compared to the much larger M87* and its single bright spot." />
+        <img src="resources/the-sagitarrius-a-black-hole/comparison.jpg" alt="Sgr A* is a blurry orange ring with three bright spots, compared to the much larger M87* and its single bright spot." />
     <img-popout>
     <figcaption>A comparison of the M87* and Sgr A* black holes. Source: <a href="https://www.eso.org/public/blog/spot-the-difference-sagittarius-a-m87/">European Southern Observatory</a></figcaption>
 </figure>
