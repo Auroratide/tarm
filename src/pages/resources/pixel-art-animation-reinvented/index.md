@@ -8,6 +8,8 @@ publishedAt: 2022-04-26
 addedAt: 2022-05-06
 topic: art
 tags: [ pixelart, unity, game dev, rendering ]
+setup: |
+  import example from './example.png'
 ---
 
 ## Spritesheets
@@ -28,7 +30,7 @@ A [shader](https://docs.unity3d.com/Manual/shader-introduction.html) is used to 
 
 <figure>
     <img-popout>
-        <img src="resources/pixel-art-animation-reinvented/example.png" alt="The Source image shows an animation frame with oddly colored pixels. The Lookup image shows a flattened character sprite. The Result image shows the animation frame, but colored according to the sprite." />
+        <img src={example} alt="The Source image shows an animation frame with oddly colored pixels. The Lookup image shows a flattened character sprite. The Result image shows the animation frame, but colored according to the sprite." width="1644" height="632" />
     </img-popout>
     <figcaption>This approach decouples the animation of a character from her appearance.</figcaption>
 </figure>

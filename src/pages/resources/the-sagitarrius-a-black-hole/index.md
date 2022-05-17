@@ -8,13 +8,15 @@ publishedAt: 2022-05-13
 addedAt: 2022-05-14
 topic: astronomy
 tags: [ black hole, interferometry, milky way, galaxy ]
+setup: |
+  import comparison from './comparison.jpg'
 ---
 
 In 2017, the Event Horizon Telescope essentially photographed two black holes: [M87*](https://en.wikipedia.org/wiki/Messier_87#Supermassive_black_hole_M87*) and [Sagitarrius A*](https://en.wikipedia.org/wiki/Sagittarius_A*) (<abbr>Sgr A*</abbr>). Sgr A* is the black hole at the center of our own galaxy, and in the last few days its photo was finally (5 years later!) processed and released!
 
 <figure>
     <img-popout>
-        <img src="resources/the-sagitarrius-a-black-hole/comparison.jpg" alt="Sgr A* is a blurry orange ring with three bright spots, compared to the much larger M87* and its single bright spot." />
+        <img src={comparison} alt="Sgr A* is a blurry orange ring with three bright spots, compared to the much larger M87* and its single bright spot." width="1280" height="748" />
     <img-popout>
     <figcaption>A comparison of the M87* and Sgr A* black holes. Source: <a href="https://www.eso.org/public/blog/spot-the-difference-sagittarius-a-m87/">European Southern Observatory</a></figcaption>
 </figure>
