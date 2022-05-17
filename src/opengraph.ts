@@ -25,7 +25,10 @@ const extractImage = ({ ogImage, requestUrl }: {
 }
 
 export const extractOpengraph = async (url: string) => {
-    const { error, result } = await ogs({ url })
+    const { error, result } = await ogs({
+        url,
+        downloadLimit: 10000000, // 10 MB
+    })
     if (error)
         throw new Error(`Could not fetch OpenGraph information from ${url}`)
 
