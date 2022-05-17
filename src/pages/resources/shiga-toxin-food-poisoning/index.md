@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/resource.astro
+layout: ../../../layouts/resource.astro
 title: Shiga Toxin Food Poisoning
 author: chubbyemu
 type: video

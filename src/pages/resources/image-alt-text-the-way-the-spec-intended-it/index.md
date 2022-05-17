@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/resource.astro
+layout: ../../../layouts/resource.astro
 title: Image Alt Text, the Way the Spec Intended It
 author: timothy-foster
 type: article

@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/resource.astro
+layout: ../../../layouts/resource.astro
 title: How to use scroll-linked animations the right way
 author: alvin-wan
 type: article

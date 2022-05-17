@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/resource.astro
+layout: ../../../layouts/resource.astro
 title: Worldbuilding Table of Elements
 author: u-otheratlas
 type: image

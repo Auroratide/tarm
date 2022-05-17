@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/resource.astro
+layout: ../../../layouts/resource.astro
 title: Pixelart and the image-rendering Paradox
 author: timothy-foster
 type: article

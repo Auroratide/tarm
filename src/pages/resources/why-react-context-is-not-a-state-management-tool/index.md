@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/resource.astro
+layout: ../../../layouts/resource.astro
 title: Why React Context is Not a "State Management" Tool
 author: mark-erikson
 type: article

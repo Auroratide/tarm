@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/resource.astro
+layout: ../../../layouts/resource.astro
 title: Precession of the Equinoxes
 author: becky-smethurst
 type: video

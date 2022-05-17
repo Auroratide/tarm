@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/resource.astro
+layout: ../../../layouts/resource.astro
 title: Pixel Art Animation. Reinvented.
 author: aarthificial
 type: video

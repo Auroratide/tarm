@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/resource.astro
+layout: ../../../layouts/resource.astro
 title: The Sagitarrius A* Black Hole
 author: becky-smethurst
 type: video

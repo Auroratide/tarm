@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/resource.astro
+layout: ../../../layouts/resource.astro
 title: How to animate box-shadow
 author: tobias-bjerrome
 type: article

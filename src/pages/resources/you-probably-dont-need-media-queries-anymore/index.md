@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/resource.astro
+layout: ../../../layouts/resource.astro
 title: You Probably Don't Need Media Queries Anymore
 author: kathryn-grayson-nanz
 type: article
