@@ -24,7 +24,7 @@
 
         <script src="https://unpkg.com/@ungap/custom-elements/es.js"></script>
         <script defer src="https://unpkg.com/@auroratide/img-popout/dist/index.js"></script>
-    <link rel="stylesheet" href="/tarm/assets/asset.1ffa28a7.css"></link><script type="module" src="/tarm/entry.d56ac3ff9.js" astro-script="/resources/pixel-art-animation-reinvented/script-0"></script>
+    <link rel="stylesheet" href="/tarm/assets/asset.e301ed21.css"></link><script type="module" src="/tarm/entry.d56ac3ff9.js"></script>
 </head>
     <body class="theme-livianyellow">
         
@@ -67,7 +67,7 @@
     </a>
 </header>
 
-<main><article class="astro-2TUBAFR7">
+<main><article class="astro-ROPZ4CJ5">
     <header class="astro-MKASNDVW">
     <h1 class="title astro-MKASNDVW">Pixel Art Animation. Reinvented.</h1>
     <address class="author astro-MKASNDVW">By <a rel="author" href="https://www.youtube.com/channel/UCtEwVJZABCd0tels2KIpKGQ" class="astro-MKASNDVW">aarthificial</a></address>
@@ -97,7 +97,7 @@
 
 <h2 id="spritesheets">Spritesheets</h2><p>When making a 2D game with characters and animations, a classic approach is to create a <dfn>spritesheet</dfn>. An animation can be thought of as a series of rapidly displayed frames each showing a snapshot of the animation. A spritesheet is a grid of such frames, and a game will reference each frame in the sheet when showing the animation.</p><p>There is a problem with this approach: What if you want <em>variations</em>? For example, let’s say a character dresses differently depending on the season. Normally, you would have to clone the <em>entire spritesheet</em> and alter it to fit the new variation.</p><p>This results in a lot of duplicated sprites. Heaven forbid you need to tweak the <em>animation itself</em> and therefore need to change every single spritesheet.</p><h2 id="uv-mapping">UV Mapping</h2><p>For his game, aarthificial uses a different approach that separates the animation from the appearance.</p><p>The animation is still a classic spritesheet. However, instead of each pixel representing to color to display, each pixel <em>actually</em> represents the coordinates of a pixel in a different image; let’s call this special image the <strong>lookup image</strong>.</p><p>A <a href="https://docs.unity3d.com/Manual/shader-introduction.html">shader</a> is used to render the lookup pixel to the view.</p><figure>
     <img-popout>
-        <img src="resources/pixel-art-animation-reinvented/example.png" alt="The Source image shows an animation frame with oddly colored pixels. The Lookup image shows a flattened character sprite. The Result image shows the animation frame, but colored according to the sprite.">
+        <img src="/tarm/assets/asset.cea05f82.png" alt="The Source image shows an animation frame with oddly colored pixels. The Lookup image shows a flattened character sprite. The Result image shows the animation frame, but colored according to the sprite." width="1644" height="632">
     </img-popout>
     <figcaption>This approach decouples the animation of a character from her appearance.</figcaption>
 </figure><p>Now, there is only ever a single animation spritesheet. If you want different variations of the character, you only need to supply many different lookup images, each of which is drastically cheaper to make than an entire animation sheet.</p><p>In fact, this technique is not entirely novel. 3D animations, for instance, animate using “bones” and allow changes in appearance via models and meshes. aarthificial has taken that wisdom and applied it to pixelart.</p>

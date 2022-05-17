@@ -12,19 +12,19 @@
 
         <link rel="icon" href="favicon.png">
 
-        <title>How to use scroll-linked animations the right way - The Archive of Random Material</title>
+        <title>How to animate box-shadow - The Archive of Random Material</title>
 
         <meta property="og:site_name" content="The Archive of Random Material">
-<meta property="og:title" content="How to use scroll-linked animations the right way">
+<meta property="og:title" content="How to animate box-shadow">
 <meta property="og:image" content="https://auroratide.github.io/tarm/icons/512.png">
-<meta property="og:url" content="https://auroratide.github.io/tarm/resources/use-scroll-linked-animations-the-right-way/">
+<meta property="og:url" content="https://auroratide.github.io/tarm/resources/how-to-animate-box-shadow/">
 <meta property="og:type" content="article">
-<meta property="og:article:published_time" content="2022-05-09T00:00:00.000Z"><meta property="og:article:author" content="Timothy Foster"><meta property="og:article:section" content="frontend"><meta property="og:article:tag" content="scrolling"><meta property="og:article:tag" content="animation"><meta property="og:article:tag" content="javascript"><meta property="og:article:tag" content="css"><meta property="og:article:tag" content="parallax">
+<meta property="og:article:published_time" content="2022-05-17T00:00:00.000Z"><meta property="og:article:author" content="Timothy Foster"><meta property="og:article:section" content="frontend"><meta property="og:article:tag" content="css"><meta property="og:article:tag" content="performance"><meta property="og:article:tag" content="shadow"><meta property="og:article:tag" content="box-shadow"><meta property="og:article:tag" content="pseudo-element"><meta property="og:article:tag" content="opacity">
 
 
         <script src="https://unpkg.com/@ungap/custom-elements/es.js"></script>
         <script defer src="https://unpkg.com/@auroratide/img-popout/dist/index.js"></script>
-    <link rel="stylesheet" href="/tarm/assets/asset.e301ed21.css"></link><script type="module" src="/tarm/entry.d56ac3ff6.js"></script>
+    <link rel="stylesheet" href="/tarm/assets/asset.e301ed21.css"></link><script type="module" src="/tarm/entry.d56ac3ff13.js"></script>
 </head>
     <body class="theme-aurorablue">
         
@@ -69,9 +69,9 @@
 
 <main><article class="astro-ROPZ4CJ5">
     <header class="astro-MKASNDVW">
-    <h1 class="title astro-MKASNDVW">How to use scroll-linked animations the right way</h1>
-    <address class="author astro-MKASNDVW">By <a rel="author" href="https://blog.logrocket.com/author/alvinwan/" class="astro-MKASNDVW">Alvin Wan</a></address>
-    <span class="resource astro-MKASNDVW"><a class="button astro-MKASNDVW" href="https://blog.logrocket.com/use-scroll-linked-animations-right-way/">Read original article</a></span>
+    <h1 class="title astro-MKASNDVW">How to animate box-shadow</h1>
+    <address class="author astro-MKASNDVW">By <a rel="author" href="https://tobiasahlin.com/" class="astro-MKASNDVW">Tobias Ahlin Bjerrome</a></address>
+    <span class="resource astro-MKASNDVW"><a class="button astro-MKASNDVW" href="https://tobiasahlin.com/blog/how-to-animate-box-shadow/">Read original article</a></span>
     <div class="cover astro-MKASNDVW"><div class="cover-image astro-NYUPLONC" aria-hidden="true">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="astro-NYUPLONC">
         <rect x="28" y="0" width="72" height="72" class="astro-NYUPLONC"></rect>
@@ -88,20 +88,31 @@
         <rect x="85" y="77" width="15" height="15" class="astro-NYUPLONC"></rect>
     </svg>
     <img-popout class="image-window astro-NYUPLONC">
-            <img src="https://blog.logrocket.com/wp-content/uploads/2019/06/using-scroll-link-animations-right-way.png" width="730" height="487" alt="" class="astro-NYUPLONC">
+            <img src="https://tobiasahlin.com/static/-social/og_blog-how-to-animate-box-shadow.jpg" width="1200" height="627" alt="" class="astro-NYUPLONC">
         </img-popout>
 </div>
 
 </div>
 </header>
 
-<p>A naive implementation of a parallax effect using Javascript will result in the following <a href="https://firefox-source-docs.mozilla.org/performance/scroll-linked_effects.html">warning on Firefox</a>:</p><blockquote>
-<p>This site appears to use a scroll-linked positioning effect. This may not work well with asynchronous panning.</p>
-</blockquote><p>Essentially, using Javascript to accomplish <strong>scroll-linked effects</strong> can have major performance issues, as well as accessibility issues deriving from such problems. The result is jittery or lagging animations, which is no good for anyone.</p><h2 id="why-this-is-a-problem">Why this is a problem</h2><p>Browsers do a lot of work in the background to deliver a web page. This work is divided among <strong>threads</strong> with different responsibilities. To provide a better experience for the reader, scrolling is sometimes put on a so-called <strong>compositor thread</strong>. Meanwhile, scroll events are triggered and run on the <strong>main thread</strong>.</p><p>As these two threads are not guaranteed to be synchronized, lagging can occur.</p><h2 id="use-css-instead">Use CSS Instead</h2><p>The best way to solve scroll-based issues is to use CSS instead of Javascript. This puts all of the work onto the compositor thread gives the browser all of the responsibility of optimization.</p><p>The most popular techniques can be done with CSS:</p><ul>
-<li><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position#sticky">Sticky Positioning</a></strong> - just use <code>position: sticky</code></li>
-<li><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Scroll_Snap">Scroll Snapping</a></strong> - some properties can force the scroll to move to an element</li>
-<li><strong><a href="https://keithclark.co.uk/articles/pure-css-parallax-websites/">Parallax</a></strong> - utilizes a combination of <code>perspective</code> and <code>translateZ</code> to, in a sense, literally implement parallax</li>
-</ul><h2 id="javascript-observer-pattern">Javascript Observer Pattern</h2><p>Instead of relying on the <code>scroll</code> event to detect when an animation should happen, observers should be used to trigger an action when a specific scroll position is reached (observing vs polling). The <strong><a href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API">Intersection Observer API</a></strong> is build to do just that.</p>
+<p>Using CSS to animate a box shadow can be very taxing on performance. Even macbooks may have trouble rendering them, causing the page to lag when scrolling; it’s notably far worse on less capable devices, most notoriously any phone.</p><p>Instead, a similar effect can usually be achieved by varying the opacity of an element with a static box-shadow, namely a pseudo element at the same location.</p><pre class="language-css"><code class="language-css"><span class="token selector">.box</span> <span class="token punctuation">{</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+    <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 1px 2px <span class="token function">hsla</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0%<span class="token punctuation">,</span> 0%<span class="token punctuation">,</span> 0.15<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.box::after</span> <span class="token punctuation">{</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+    <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span> <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span> <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">opacity</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token comment">/* A Larger Shadow */</span>
+    <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 5px 15px <span class="token function">hsla</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0%<span class="token punctuation">,</span> 0%<span class="token punctuation">,</span> 0.3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">transition</span><span class="token punctuation">:</span> opacity 0.3s ease-in-out<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.box:hover::after</span> <span class="token punctuation">{</span>
+    <span class="token property">opacity</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre><p>The big difference according to <a href="https://csstriggers.com">CSS Triggers</a> is that <code>opacity</code> does not change element geometry, whereas <code>box-shadow</code> does. This means opacity does not need to recalculate layout, and in some engines does not even require repainting. It is therefore more performant.</p>
 </article>
 
 </main><footer class="astro-MYFJOM3Y">
