@@ -38,5 +38,9 @@
     "tobias-bjerrome": {
         "name": "Tobias Ahlin Bjerrome",
         "link": "https://tobiasahlin.com/"
+    },
+    "accessibility-developer-guide": {
+        "name": "Accessibility Developer Guide",
+        "link": "https://www.accessibility-developer-guide.com/"
     }
 }
