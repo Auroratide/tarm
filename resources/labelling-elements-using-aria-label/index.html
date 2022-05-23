@@ -12,21 +12,21 @@
 
         <link rel="icon" href="favicon.png">
 
-        <title>Pixel Art Animation. Reinvented. - The Archive of Random Material</title>
+        <title>Labelling Elements using aria-label - The Archive of Random Material</title>
 
         <meta property="og:site_name" content="The Archive of Random Material">
-<meta property="og:title" content="Pixel Art Animation. Reinvented.">
+<meta property="og:title" content="Labelling Elements using aria-label">
 <meta property="og:image" content="https://auroratide.github.io/tarm/icons/512.png">
-<meta property="og:url" content="https://auroratide.github.io/tarm/resources/pixel-art-animation-reinvented/">
+<meta property="og:url" content="https://auroratide.github.io/tarm/resources/labelling-elements-using-aria-label/">
 <meta property="og:type" content="article">
-<meta property="og:article:published_time" content="2022-05-06T00:00:00.000Z"><meta property="og:article:author" content="Timothy Foster"><meta property="og:article:section" content="art"><meta property="og:article:tag" content="pixelart"><meta property="og:article:tag" content="unity"><meta property="og:article:tag" content="game dev"><meta property="og:article:tag" content="rendering">
+<meta property="og:article:published_time" content="2022-05-23T00:00:00.000Z"><meta property="og:article:author" content="Timothy Foster"><meta property="og:article:section" content="frontend"><meta property="og:article:tag" content="wai-aria"><meta property="og:article:tag" content="accessibility"><meta property="og:article:tag" content="html">
 
 
         <script src="https://unpkg.com/@ungap/custom-elements/es.js"></script>
         <script defer src="https://unpkg.com/@auroratide/img-popout/dist/index.js"></script>
-    <link rel="stylesheet" href="/tarm/assets/asset.79c75b8e.css"></link><script type="module" src="/tarm/entry.d56ac3ff10.js"></script>
+    <link rel="stylesheet" href="/tarm/assets/asset.79c75b8e.css"></link><script type="module" src="/tarm/entry.d56ac3ff8.js"></script>
 </head>
-    <body class="theme-livianyellow">
+    <body class="theme-aurorablue">
         
 
 <div id="pixel-snow" class="pixel-snow astro-I3JCUIYE" aria-hidden="true">
@@ -69,38 +69,22 @@
 
 <main><article class="astro-ROPZ4CJ5">
     <header class="astro-SRUDFN6X">
-    <h1 class="title astro-SRUDFN6X">Pixel Art Animation. Reinvented.</h1>
-    <address class="author astro-SRUDFN6X">By <a rel="author" href="https://www.youtube.com/channel/UCtEwVJZABCd0tels2KIpKGQ" class="astro-SRUDFN6X">aarthificial</a></address>
-    <span class="resource astro-SRUDFN6X"><a class="button astro-SRUDFN6X" href="https://www.youtube.com/watch?v=HsOKwUwL1bE">Watch original video</a></span>
-    <div class="cover astro-SRUDFN6X"><div class="cover-image astro-NYUPLONC" aria-hidden="true">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="astro-NYUPLONC">
-        <rect x="28" y="0" width="72" height="72" class="astro-NYUPLONC"></rect>
-        <rect x="2" y="0" width="21" height="21" class="astro-NYUPLONC"></rect>
-        <rect x="16" y="25" width="10" height="10" class="astro-NYUPLONC"></rect>
-        <rect x="8" y="34" width="6" height="6" class="astro-NYUPLONC"></rect>
-        <rect x="6" y="46" width="18" height="18" class="astro-NYUPLONC"></rect>
-        <rect x="16" y="68" width="9" height="9" class="astro-NYUPLONC"></rect>
-        <rect x="0" y="76" width="6" height="6" class="astro-NYUPLONC"></rect>
-        <rect x="12" y="88" width="4" height="4" class="astro-NYUPLONC"></rect>
-        <rect x="25" y="82" width="11" height="11" class="astro-NYUPLONC"></rect>
-        <rect x="38" y="74" width="10" height="10" class="astro-NYUPLONC"></rect>
-        <rect x="58" y="80" width="20" height="20" class="astro-NYUPLONC"></rect>
-        <rect x="85" y="77" width="15" height="15" class="astro-NYUPLONC"></rect>
-    </svg>
-    <img-popout class="image-window astro-NYUPLONC">
-            <img src="https://i.ytimg.com/vi/HsOKwUwL1bE/maxresdefault.jpg" width="1280" height="720" alt="" class="astro-NYUPLONC">
-        </img-popout>
-</div>
-
-</div>
+    <h1 class="title astro-SRUDFN6X">Labelling Elements using aria-label</h1>
+    <address class="author astro-SRUDFN6X">By <a rel="author" href="https://www.accessibility-developer-guide.com/" class="astro-SRUDFN6X">Accessibility Developer Guide</a></address>
+    <span class="resource astro-SRUDFN6X"><a class="button astro-SRUDFN6X" href="https://www.accessibility-developer-guide.com/examples/sensible-aria-usage/label-labelledby/">Read original article</a></span>
+    <div class="cover astro-SRUDFN6X"></div>
 </header>
 
-<h2 id="spritesheets">Spritesheets</h2><p>When making a 2D game with characters and animations, a classic approach is to create a <dfn>spritesheet</dfn>. An animation can be thought of as a series of rapidly displayed frames each showing a snapshot of the animation. A spritesheet is a grid of such frames, and a game will reference each frame in the sheet when showing the animation.</p><p>There is a problem with this approach: What if you want <em>variations</em>? For example, let’s say a character dresses differently depending on the season. Normally, you would have to clone the <em>entire spritesheet</em> and alter it to fit the new variation.</p><p>This results in a lot of duplicated sprites. Heaven forbid you need to tweak the <em>animation itself</em> and therefore need to change every single spritesheet.</p><h2 id="uv-mapping">UV Mapping</h2><p>For his game, aarthificial uses a different approach that separates the animation from the appearance.</p><p>The animation is still a classic spritesheet. However, instead of each pixel representing to color to display, each pixel <em>actually</em> represents the coordinates of a pixel in a different image; let’s call this special image the <strong>lookup image</strong>.</p><p>A <a href="https://docs.unity3d.com/Manual/shader-introduction.html">shader</a> is used to render the lookup pixel to the view.</p><figure>
-    <img-popout>
-        <img src="/tarm/assets/asset.cea05f82.png" alt="The Source image shows an animation frame with oddly colored pixels. The Lookup image shows a flattened character sprite. The Result image shows the animation frame, but colored according to the sprite." width="1644" height="632">
-    </img-popout>
-    <figcaption>This approach decouples the animation of a character from her appearance.</figcaption>
-</figure><p>Now, there is only ever a single animation spritesheet. If you want different variations of the character, you only need to supply many different lookup images, each of which is drastically cheaper to make than an entire animation sheet.</p><p>In fact, this technique is not entirely novel. 3D animations, for instance, animate using “bones” and allow changes in appearance via models and meshes. aarthificial has taken that wisdom and applied it to pixelart.</p>
+<p>The <code>aria-label</code> element should be used judiciously. When defined on an HTML element, it’s supposed to set that element’s accessibility name which is read by screen readers. While useful, there are some things to be aware of:</p><ul>
+<li><code>aria-label</code> is not allowed to be used by every element (see <a href="https://w3c.github.io/html-aria/#docconformance">specification</a>)</li>
+<li>Behaviour between browsers and assistive tools differ</li>
+<li>Text in <code>aria-label</code> cannot be searched the same way visible text can</li>
+</ul><p>Generally speaking, HTML provides better ways to set an element’s accessible name:</p><ul>
+<li>The element’s text content (as with <code>&#x3C;button></code>)</li>
+<li>An image’s <code>alt</code> text</li>
+<li>Table <code>caption</code> content</li>
+<li>Form <code>label</code>s</li>
+</ul><p>Therefore, use of <code>aria-label</code> should be an exception only when there is no other reasonable way to make something accessible.</p>
 </article>
 
 </main><footer class="astro-MYFJOM3Y">
