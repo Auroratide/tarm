@@ -1,54 +1,58 @@
 {
-    "u-otheratlas": {
-        "name": "u/OtherAtlas",
-        "link": "https://www.reddit.com/user/OtherAtlas/"
-    },
-    "kathryn-grayson-nanz": {
-        "name": "Kathryn Grayson Nanz",
-        "link": "http://kgrayson.com/"
-    },
-    "timothy-foster": {
-        "name": "Timothy Foster",
-        "link": "https://auroratide.com/"
-    },
-    "matt-rogish": {
-        "name": "Matt Rogish",
-        "link": "https://mattrogish.com/"
-    },
-    "mark-erikson": {
-        "name": "Mark Erikson",
-        "link": "https://blog.isquaredsoftware.com/"
-    },
-    "chubbyemu": {
-        "name": "Chubbyemu",
-        "link": "https://www.youtube.com/channel/UCKOvOaJv4GK-oDqx-sj7VVg"
-    },
-    "becky-smethurst": {
-        "name": "Dr. Becky Smethurst",
-        "link": "https://www.youtube.com/channel/UCYNbYGl89UUowy8oXkipC-Q"
-    },
-    "aarthificial": {
-        "name": "aarthificial",
-        "link": "https://www.youtube.com/channel/UCtEwVJZABCd0tels2KIpKGQ"
-    },
-    "alvin-wan": {
-        "name": "Alvin Wan",
-        "link": "https://blog.logrocket.com/author/alvinwan/"
-    },
-    "tobias-bjerrome": {
-        "name": "Tobias Ahlin Bjerrome",
-        "link": "https://tobiasahlin.com/"
-    },
-    "accessibility-developer-guide": {
-        "name": "Accessibility Developer Guide",
-        "link": "https://www.accessibility-developer-guide.com/"
-    },
-    "david-robson": {
-        "name": "David Robson",
-        "link": "https://twitter.com/d_a_robson"
-    },
-    "sabine-hossenfelder": {
-        "name": "Sabine Hossenfelder",
-        "link": "https://www.youtube.com/c/SabineHossenfelder"
-    }
+	"u-otheratlas": {
+		"name": "u/OtherAtlas",
+		"link": "https://www.reddit.com/user/OtherAtlas/"
+	},
+	"kathryn-grayson-nanz": {
+		"name": "Kathryn Grayson Nanz",
+		"link": "http://kgrayson.com/"
+	},
+	"timothy-foster": {
+		"name": "Timothy Foster",
+		"link": "https://auroratide.com/"
+	},
+	"matt-rogish": {
+		"name": "Matt Rogish",
+		"link": "https://mattrogish.com/"
+	},
+	"mark-erikson": {
+		"name": "Mark Erikson",
+		"link": "https://blog.isquaredsoftware.com/"
+	},
+	"chubbyemu": {
+		"name": "Chubbyemu",
+		"link": "https://www.youtube.com/channel/UCKOvOaJv4GK-oDqx-sj7VVg"
+	},
+	"becky-smethurst": {
+		"name": "Dr. Becky Smethurst",
+		"link": "https://www.youtube.com/channel/UCYNbYGl89UUowy8oXkipC-Q"
+	},
+	"aarthificial": {
+		"name": "aarthificial",
+		"link": "https://www.youtube.com/channel/UCtEwVJZABCd0tels2KIpKGQ"
+	},
+	"alvin-wan": {
+		"name": "Alvin Wan",
+		"link": "https://blog.logrocket.com/author/alvinwan/"
+	},
+	"tobias-bjerrome": {
+		"name": "Tobias Ahlin Bjerrome",
+		"link": "https://tobiasahlin.com/"
+	},
+	"accessibility-developer-guide": {
+		"name": "Accessibility Developer Guide",
+		"link": "https://www.accessibility-developer-guide.com/"
+	},
+	"david-robson": {
+		"name": "David Robson",
+		"link": "https://twitter.com/d_a_robson"
+	},
+	"sabine-hossenfelder": {
+		"name": "Sabine Hossenfelder",
+		"link": "https://www.youtube.com/c/SabineHossenfelder"
+	},
+	"scott-alexander": {
+		"name": "Scott Alexander",
+		"link": "https://slatestarcodex.com/"
+	}
 }
