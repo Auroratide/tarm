@@ -23,5 +23,9 @@
   "author": {
     "name": "Timothy Foster",
     "url": "https://auroratide.com"
+  },
+  "packageManager": "pnpm@9.4.0",
+  "engines": {
+    "pnpm": "^9.0.0"
   }
 }
