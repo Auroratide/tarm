@@ -1,5 +1,7 @@
 # The Archive of Random Material
 
+**[Visit The Archive of Random Material](https://auroratide.github.io/tarm)!**
+
 You can find virtually anything here. It is, after all, totally random!
 
 Ok, it's not _totally_ random. I use this website to stash resources I found useful for learning something interesting.
